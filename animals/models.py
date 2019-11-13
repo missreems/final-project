@@ -1,6 +1,15 @@
 from django.db import models
 
-# Create your models here.
+# THREAT MODEL
+class Threat(models.Model):
+    name = models.CharField(max_length=30, unique=True)
+    description = models.TextField()
+
+    def __str__(self):
+        return f'{self.name}'
+    # ADD IMAGES
+
+
 
 # HABITAT MODEL
 class Habitat(models.Model):
@@ -9,12 +18,16 @@ class Habitat(models.Model):
     yearly_average_rainfall = models.CharField(max_length=50)
     average_temperature = models.CharField(max_length=50)
     plant_types = models.CharField(max_length=200)
+    threats = models.ManyToManyField(
+      Threat,
+      related_name='habitats',
+      blank=True
+    )
 
     def __str__(self):
         return f'{self.name}'
     # NEED TO ADD IMAGES FIELD
     # YEARLY AVERAGE RAINFALL AND TEMPERATURE - WANT THEM TO TAKE 2 VALUES
-
 
 
 
@@ -54,6 +67,11 @@ class Animal(models.Model):
     )
     habitats = models.ManyToManyField(
       Habitat,
+      related_name='animals',
+      blank=True
+    )
+    threats = models.ManyToManyField(
+      Threat,
       related_name='animals',
       blank=True
     )
