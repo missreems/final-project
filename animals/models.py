@@ -1,7 +1,5 @@
 from django.db import models
-
-
-
+from PIL import Image
 
 
 # THREAT MODEL
@@ -80,12 +78,12 @@ class Animal(models.Model):
         return f'{self.name}'
     # NEED TO ADD INFORMATION FIELD AND IMAGES FIELD
     # FACTS CURRENTLY TAKES ONLY ONE FACT, NEEDS TO HAVE THE ABILITY TO TAKE MULTIPLE FACTS IF THE USER WANTS
-  
+
 # DESCRIPTION MODEL
 class Description(models.Model):
-    brief = models.CharField(max_length=100, default='')
+    brief = models.CharField(max_length=100)
     heading = models.CharField(max_length=100)
-    info = models.TextField(default='')
+    info = models.TextField()
     threat = models.ForeignKey(
       Threat,
       related_name='descriptions',
@@ -96,6 +94,35 @@ class Description(models.Model):
     animal = models.ForeignKey(
       Animal,
       related_name='descriptions',
+      on_delete=models.DO_NOTHING,
+      null=True,
+      blank=True
+    )
+
+    def __str__(self):
+        return f'{self.brief}'
+
+# IMAGE MODEL
+class Image(models.Model):
+    brief = models.CharField(max_length=100)
+    image = models.ImageField()
+    threat = models.ForeignKey(
+      Threat,
+      related_name='images',
+      on_delete=models.DO_NOTHING,
+      null=True,
+      blank=True
+    )
+    animal = models.ForeignKey(
+      Animal,
+      related_name='images',
+      on_delete=models.DO_NOTHING,
+      null=True,
+      blank=True
+    )
+    habitat = models.ForeignKey(
+      Habitat,
+      related_name='images',
       on_delete=models.DO_NOTHING,
       null=True,
       blank=True
