@@ -1,1 +1,19 @@
+// website structure
+@import './structure/structure';
+
+// header
+@import './header/nav';
+
+// main - habitats
+@import './main/habitats/habitat_index';
+@import './main/habitats/habitat-show';
+
+// main - animals
+@import './main/animals/animal-index';
+
+// footer
+@import './footer/footer';
+
+
+
 

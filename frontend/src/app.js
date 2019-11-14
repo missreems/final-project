@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './styles/style.scss'
 
 
-import Nav from './components/common/Nav'
+import Header from './components/common/Header'
 import Home from './components/common/Home'
 import HabitatIndex from './components/habitats/HabitatIndex'
 import AnimalIndex from './components/animals/AnimalIndex'
@@ -14,9 +14,9 @@ class App extends React.Component{
   render() {
     return (
       <BrowserRouter>
-        <header>
-          <Nav />
-        </header>
+        
+        <Header />
+       
         <main>
           <Switch>
             <Route exact path='/' component={Home} />
@@ -24,6 +24,7 @@ class App extends React.Component{
             <Route path='/animals' component={AnimalIndex} />
           </Switch>
         </main>
+        <footer>Footer</footer>
       </BrowserRouter>
     )
   }

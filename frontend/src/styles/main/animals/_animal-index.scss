@@ -1,0 +1,34 @@
+.animal-index {
+  display: flex;
+  flex-direction: column;
+
+  .animal-index-banner {
+    height: 400px;
+    background-image: url('https://images.pexels.com/photos/52717/elephant-herd-of-elephants-animals-african-bush-elephant-52717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .animal-index-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+
+    .animal-index-card {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 20px;
+      background-color: lightskyblue;
+      background-image: url('https://c402277.ssl.cf1.rackcdn.com/photos/2232/images/portrait_overview/XL_288467.jpg?1345653107');
+      background-size: cover;
+      color: white;
+    }
+  }
+}
+
