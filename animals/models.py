@@ -1,22 +1,25 @@
 from django.db import models
 
+
+
+
+
 # THREAT MODEL
 class Threat(models.Model):
     name = models.CharField(max_length=30, unique=True)
-    description = models.TextField()
 
     def __str__(self):
         return f'{self.name}'
     # ADD IMAGES
 
 
-
 # HABITAT MODEL
 class Habitat(models.Model):
     name = models.CharField(max_length=30, unique=True)
-    description = models.CharField(max_length=500)
-    yearly_average_rainfall = models.CharField(max_length=50)
-    average_temperature = models.CharField(max_length=50)
+    min_rainfall = models.IntegerField()
+    max_rainfall = models.IntegerField()
+    min_temperature = models.IntegerField()
+    max_temperature = models.IntegerField()
     plant_types = models.CharField(max_length=200)
     threats = models.ManyToManyField(
       Threat,
@@ -27,8 +30,6 @@ class Habitat(models.Model):
     def __str__(self):
         return f'{self.name}'
     # NEED TO ADD IMAGES FIELD
-    # YEARLY AVERAGE RAINFALL AND TEMPERATURE - WANT THEM TO TAKE 2 VALUES
-
 
 
 # CLASSIFICATION MODEL
@@ -37,8 +38,6 @@ class Classification(models.Model):
 
     def __str__(self):
         return f'{self.classification}'
-
-
 
 
 # ANIMAL MODEL
@@ -59,6 +58,7 @@ class Animal(models.Model):
       (carni, 'Carnivore')
     ]
     diet = models.CharField(max_length=9, choices=diet_choices, default=omni)
+
     classification = models.ForeignKey(
       Classification,
       related_name='animals',
@@ -80,3 +80,26 @@ class Animal(models.Model):
         return f'{self.name}'
     # NEED TO ADD INFORMATION FIELD AND IMAGES FIELD
     # FACTS CURRENTLY TAKES ONLY ONE FACT, NEEDS TO HAVE THE ABILITY TO TAKE MULTIPLE FACTS IF THE USER WANTS
+  
+# DESCRIPTION MODEL
+class Description(models.Model):
+    brief = models.CharField(max_length=100, default='')
+    heading = models.CharField(max_length=100)
+    info = models.TextField(default='')
+    threat = models.ForeignKey(
+      Threat,
+      related_name='descriptions',
+      on_delete=models.DO_NOTHING,
+      null=True,
+      blank=True
+    )
+    animal = models.ForeignKey(
+      Animal,
+      related_name='descriptions',
+      on_delete=models.DO_NOTHING,
+      null=True,
+      blank=True
+    )
+
+    def __str__(self):
+        return f'{self.brief}'
