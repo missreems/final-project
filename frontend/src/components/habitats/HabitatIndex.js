@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 class HabitatIndex extends React.Component {
@@ -27,7 +28,7 @@ class HabitatIndex extends React.Component {
         <div className="habitat-index-banner"></div>
         <div  className="habitat-index-card-container">
           {habitats.map(habitat =>
-            <div key={habitat.id} className="habitat-index-card">{habitat.name}</div>
+            <Link to='/habitats' key={habitat.id} className="habitat-index-card">{habitat.name}</Link>
           )}
         </div>
       </div>
