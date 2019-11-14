@@ -7,8 +7,8 @@ class Nav extends React.Component {
     return (
       <nav>
         <Link to='/'>Home</Link>
-        <Link>Habitats</Link>
-        <Link>A-Z Animals</Link>
+        <Link to='/habitats'>Habitats</Link>
+        <Link to='/animals'>A-Z Animals</Link>
       </nav>
     )
   }
