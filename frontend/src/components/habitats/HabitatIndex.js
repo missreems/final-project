@@ -24,13 +24,42 @@ class HabitatIndex extends React.Component {
     if (!habitats) return null
     return (
       <div className="habitat-index">
-        <h1>Habitat Index Page</h1>
+
         <div className="habitat-index-banner"></div>
-        <div  className="habitat-index-card-container">
-          {habitats.map(habitat =>
-            <Link to={`/habitats/${habitat.id}`} key={habitat.id} className="habitat-index-card">{habitat.name}</Link>
-          )}
+
+        <div className="habitat-index-content-container">
+          <div className="habitat-index-heading">
+            <h1>Habitats</h1>
+          </div>
+          <div  className="habitat-index-card-container">
+            <div className="habitat-index-card-row">
+              {habitats.map(habitat =>
+                <Link to={`/habitats/${habitat.id}`} key={habitat.id} className="habitat-index-card">{habitat.name}</Link>
+              )}
+            </div>
+            <div className="habitat-index-card-row">
+              {habitats.map(habitat =>
+                <Link to={`/habitats/${habitat.id}`} key={habitat.id} className="habitat-index-card">{habitat.name}</Link>
+              )}
+            </div>
+            <div className="habitat-index-card-row">
+              {habitats.map(habitat =>
+                <Link to={`/habitats/${habitat.id}`} key={habitat.id} className="habitat-index-card">{habitat.name}</Link>
+              )}
+            </div>
+            <div className="habitat-index-card-row">
+              {habitats.map(habitat =>
+                <Link to={`/habitats/${habitat.id}`} key={habitat.id} className="habitat-index-card">{habitat.name}</Link>
+              )}
+            </div>
+            <div className="habitat-index-card-row">
+              {habitats.map(habitat =>
+                <Link to={`/habitats/${habitat.id}`} key={habitat.id} className="habitat-index-card">{habitat.name}</Link>
+              )}
+            </div>
+          </div>
         </div>
+
       </div>
     )
   }

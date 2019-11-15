@@ -119,7 +119,7 @@ class Description(models.Model):
 # IMAGE MODEL
 class Image(models.Model):
     brief = models.CharField(max_length=100)
-    image = models.ImageField()
+    image = models.CharField(max_length=500)
     threat = models.ForeignKey(
       Threat,
       related_name='images',

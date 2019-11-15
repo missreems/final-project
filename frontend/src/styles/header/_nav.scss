@@ -13,7 +13,7 @@ header {
 
   .header-top {
     height: 40px;
-    background-color: lightsalmon;
+    background-color: rgb(236, 236, 236);
     padding-top: 10px;
 
     nav {
@@ -21,13 +21,24 @@ header {
       width: 30%;
       display: flex;
       justify-content: space-around;
+
+      a {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
     }
   }
 
   .header-bottom {
     height: 60px;
-    background-color: lightgreen;
+    // background-color: lightgreen;
     padding-top: 10px;
+    border-bottom: 3px solid black;
+
+    h1 {
+      font-family: 'Oldenburg', cursive;
+    }
   }
  
 }

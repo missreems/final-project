@@ -1,34 +1,49 @@
 .habitat-show-content-left {
-  background-color: lightpink;
+  // background-color: lightgreen;
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 150px;
 
-  .habitat-show-heading {
+  .habitat-show-text {
     width: 90%;
-    height: 10%;
+    // height: auto;
     background-color: lightseagreen;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-
-    h1 {
-      font-size: 50px;
-    }
-  }
-
-  .habitat-show-image {
-    width: 90%;
-    height: 40%;
-    background-color: lightslategrey;
-    // background-image: url('https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
+    margin: 40px 0 20px;
     border-radius: 10px;
-  }
+    padding: 20px 0;
+
+    div {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      padding: 0 50px;
+      
+      h5 {
+        margin-right: 10px;
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 22px;
+      }
+    }
+
+    .description-layout {
+      display:flex;
+      flex-direction: column;
+
+      h5 {
+        align-self: flex-start;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }  
 }
