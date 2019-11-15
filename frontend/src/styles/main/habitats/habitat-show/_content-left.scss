@@ -1,0 +1,34 @@
+.habitat-show-content-left {
+  background-color: lightpink;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .habitat-show-heading {
+    width: 90%;
+    height: 10%;
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .habitat-show-image {
+    width: 90%;
+    height: 40%;
+    background-color: lightslategrey;
+    // background-image: url('https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    border-radius: 10px;
+  }
+}

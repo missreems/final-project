@@ -10,7 +10,7 @@ class NestedAnimalSerializer(serializers.ModelSerializer):
 class NestedHabitatSerializer(serializers.ModelSerializer):
     class Meta:
         model = Habitat
-        fields = ('id', 'name', 'min_rainfall', 'max_rainfall', 'min_temperature', 'max_temperature', 'plant_types')
+        fields = ('id', 'name', 'min_rainfall', 'max_rainfall', 'min_temperature', 'max_temperature', 'plant_types', 'habitat_category')
 
 class NestedThreatSerializer(serializers.ModelSerializer):
     class Meta:
@@ -49,10 +49,11 @@ class ThreatSerializer(serializers.ModelSerializer):
 class HabitatSerializer(serializers.ModelSerializer):
     animals = NestedAnimalSerializer(many=True)
     threats = NestedThreatSerializer(many=True)
+    descriptions = NestedDescriptionSerializer(many=True)
     images = NestedImageSerializer(many=True)
     class Meta:
         model = Habitat
-        fields = ('id', 'name', 'min_rainfall', 'max_rainfall', 'min_temperature', 'max_temperature', 'plant_types', 'animals', 'threats', 'images')
+        fields = ('id', 'name', 'min_rainfall', 'max_rainfall', 'min_temperature', 'max_temperature', 'plant_types', 'habitat_category', 'animals', 'threats', 'descriptions', 'images')
 
 class ClassificationSerializer(serializers.ModelSerializer):
     animals = NestedAnimalSerializer(many=True)
@@ -62,7 +63,7 @@ class ClassificationSerializer(serializers.ModelSerializer):
 
 class AnimalSerializer(serializers.ModelSerializer):
     classification = NestedClassificationSerializer()
-    habitats = NestedHabitatSerializer(many=True)
+    habitats = NestedHabitatSerializer()
     threats = NestedThreatSerializer(many=True)
     descriptions = NestedDescriptionSerializer(many=True)
     images = NestedImageSerializer(many=True)

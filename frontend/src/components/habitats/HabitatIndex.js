@@ -28,7 +28,7 @@ class HabitatIndex extends React.Component {
         <div className="habitat-index-banner"></div>
         <div  className="habitat-index-card-container">
           {habitats.map(habitat =>
-            <Link to='/habitats' key={habitat.id} className="habitat-index-card">{habitat.name}</Link>
+            <Link to={`/habitats/${habitat.id}`} key={habitat.id} className="habitat-index-card">{habitat.name}</Link>
           )}
         </div>
       </div>

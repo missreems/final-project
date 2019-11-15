@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 class AnimalIndex extends React.Component {
@@ -27,7 +28,7 @@ class AnimalIndex extends React.Component {
         <div className="animal-index-banner"></div>
         <div  className="animal-index-card-container">
           {animals.map(animal =>
-            <div key={animal.id} className="animal-index-card">{animal.name}</div>
+            <Link to={`/animals/${animal.id}`} key={animal.id} className="animal-index-card">{animal.name}</Link>
           )}
         </div>
       </div>

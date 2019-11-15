@@ -8,6 +8,7 @@ import Home from './components/common/Home'
 import HabitatIndex from './components/habitats/HabitatIndex'
 import HabitatShow from './components/habitats/HabitatShow'
 import AnimalIndex from './components/animals/AnimalIndex'
+import AnimalShow from './components/animals/AnimalShow'
 import Contact from './components/common/Contact'
 import About from './components/common/About'
 
@@ -20,6 +21,7 @@ class App extends React.Component{
         <main>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route path='/animals/:id' component={AnimalShow} />
             <Route path='/habitats/:id' component={HabitatShow} />
             <Route path='/habitats' component={HabitatIndex} />
             <Route path='/animals' component={AnimalIndex} />

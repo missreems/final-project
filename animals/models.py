@@ -8,7 +8,6 @@ class Threat(models.Model):
 
     def __str__(self):
         return f'{self.name}'
-    # ADD IMAGES
 
 
 # HABITAT MODEL
@@ -19,6 +18,16 @@ class Habitat(models.Model):
     min_temperature = models.IntegerField()
     max_temperature = models.IntegerField()
     plant_types = models.CharField(max_length=200)
+
+    habitat_choices = (
+        ('AQ', 'Aquatic'),
+        ('DE', 'Desert'),
+        ('TU', 'Tundra'),
+        ('FO', 'Forest'),
+        ('GR', 'Grassland')
+    )
+    habitat_category = models.CharField(max_length=20, choices=habitat_choices, default='')
+
     threats = models.ManyToManyField(
       Threat,
       related_name='habitats',
@@ -47,15 +56,12 @@ class Animal(models.Model):
     weight = models.IntegerField()
     facts = models.CharField(max_length=300, blank=True)
 
-    herbi = 'HE'
-    omni = 'OM'
-    carni = 'CA'
-    diet_choices = [
-      (herbi, 'Herbivore'),
-      (omni, 'Omnivore'),
-      (carni, 'Carnivore')
-    ]
-    diet = models.CharField(max_length=9, choices=diet_choices, default=omni)
+    diet_choices = (
+      ('HE', 'Herbivore'),
+      ('OM', 'Omnivore'),
+      ('CA', 'Carnivore')
+    )
+    diet = models.CharField(max_length=20, choices=diet_choices)
 
     classification = models.ForeignKey(
       Classification,
@@ -63,10 +69,11 @@ class Animal(models.Model):
       on_delete=models.DO_NOTHING,
       null=True
     )
-    habitats = models.ManyToManyField(
+    habitats = models.ForeignKey(
       Habitat,
       related_name='animals',
-      blank=True
+      on_delete=models.DO_NOTHING,
+      null=True
     )
     threats = models.ManyToManyField(
       Threat,
@@ -76,8 +83,7 @@ class Animal(models.Model):
 
     def __str__(self):
         return f'{self.name}'
-    # NEED TO ADD INFORMATION FIELD AND IMAGES FIELD
-    # FACTS CURRENTLY TAKES ONLY ONE FACT, NEEDS TO HAVE THE ABILITY TO TAKE MULTIPLE FACTS IF THE USER WANTS
+
 
 # DESCRIPTION MODEL
 class Description(models.Model):
@@ -98,9 +104,17 @@ class Description(models.Model):
       null=True,
       blank=True
     )
+    habitat = models.ForeignKey(
+      Habitat,
+      related_name='descriptions',
+      on_delete=models.DO_NOTHING,
+      null=True,
+      blank=True
+    )
 
     def __str__(self):
         return f'{self.brief}'
+
 
 # IMAGE MODEL
 class Image(models.Model):

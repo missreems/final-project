@@ -4,9 +4,13 @@
 // header
 @import './header/nav';
 
-// main - habitats
+// main - habitats - index
 @import './main/habitats/habitat_index';
-@import './main/habitats/habitat-show';
+
+// main - habitats show
+@import './main/habitats/habitat-show/habitat-show';
+@import './main/habitats/habitat-show/content-left';
+@import './main/habitats/habitat-show/content-right';
 
 // main - animals
 @import './main/animals/animal-index';
