@@ -56,13 +56,14 @@ class HabitatShow extends React.Component {
                 <h5>Plant types:</h5>
                 <p>{habitat.plant_types}</p>
               </div>
-              {habitat.descriptions.map(description =>
-                <div className="description-layout" key={description.id}>
-                  <h5>{description.heading}</h5>
-                  <p>{description.info}</p>
-                </div>
-              )}
             </div>
+            {habitat.descriptions.map(description =>
+              <div className="habitat-show-text description-layout" key={description.id}>
+                <h5>{description.heading}</h5>
+                <p>{description.info}</p>
+              </div>
+            )}
+
           </div>
 
 

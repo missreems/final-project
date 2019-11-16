@@ -17,7 +17,7 @@
     flex-direction: column;
     align-self: center;
     width: 90%;
-    height: 1000px;
+    // height: 1000px;
     margin-top: -300px;
     z-index: 1;
     // background-color: cadetblue;
@@ -52,12 +52,12 @@
 
         .habitat-index-card {
           width: 200px;
-          height: 200px;
+          height: 100px;
           display: flex;
           align-items: center;
           justify-content: center;
           margin: 0 20px;
-          background-color: rgb(0, 0, 124);
+          background-color: $color-bondi;
           // background-image: url('https://c402277.ssl.cf1.rackcdn.com/photos/2232/images/portrait_overview/XL_288467.jpg?1345653107');
           // background-size: cover;
           color: white;

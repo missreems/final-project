@@ -1,4 +1,9 @@
-
+// color scheme
+$color-ivory: #FFFFF2;
+$color-black: #000000;
+$color-flame: #E04F1A;
+$color-mantis: #78D162;
+$color-bondi: #00A4C1;
 
 * {
   box-sizing: border-box;
@@ -8,6 +13,7 @@
 
 body {
   font-family: 'Merienda', cursive;
+  background: $color-ivory;
 
   h1, h2, h3, h4, h5, p {
     margin: 0;

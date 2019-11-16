@@ -67,7 +67,7 @@ class AnimalIndex extends React.Component {
 
         <div className="animal-index-content-container">
           <div className="animal-index-heading">
-            <h1>Habitats</h1>
+            <h1>Animals</h1>
           </div>
           <div className="alphabet-buttons">
             <div>A</div>
