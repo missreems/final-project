@@ -1,0 +1,309 @@
+[
+{
+  "model": "animals.habitat",
+  "pk": 1,
+  "fields": {
+    "name": "Mountains",
+    "min_rainfall": 80,
+    "max_rainfall": 1000,
+    "min_temperature": -45,
+    "max_temperature": 30,
+    "plant_types": "Conifers, Grasses, Shrubs",
+    "habitat_category": "TU",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 2,
+  "fields": {
+    "name": "Polar Regions",
+    "min_rainfall": 0,
+    "max_rainfall": 250,
+    "min_temperature": -88,
+    "max_temperature": 15,
+    "plant_types": "",
+    "habitat_category": "TU",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 3,
+  "fields": {
+    "name": "Rainforests",
+    "min_rainfall": 1750,
+    "max_rainfall": 2000,
+    "min_temperature": 15,
+    "max_temperature": 35,
+    "plant_types": "Vines, Shrubs, Trees",
+    "habitat_category": "FO",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 4,
+  "fields": {
+    "name": "Woodlands",
+    "min_rainfall": 500,
+    "max_rainfall": 1500,
+    "min_temperature": 0,
+    "max_temperature": 25,
+    "plant_types": "Trees, Shrubs, Mosses, Flowering Herbs, Grasses",
+    "habitat_category": "FO",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 5,
+  "fields": {
+    "name": "Coniferous Forests",
+    "min_rainfall": 762,
+    "max_rainfall": 1524,
+    "min_temperature": -40,
+    "max_temperature": 25,
+    "plant_types": "Conifers, Low-growing Shrubs",
+    "habitat_category": "FO",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 6,
+  "fields": {
+    "name": "Savanna",
+    "min_rainfall": 101,
+    "max_rainfall": 2540,
+    "min_temperature": 20,
+    "max_temperature": 30,
+    "plant_types": "Grasses, Shrubs, Trees",
+    "habitat_category": "GR",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 7,
+  "fields": {
+    "name": "Temperate Grasslands",
+    "min_rainfall": 508,
+    "max_rainfall": 889,
+    "min_temperature": -17,
+    "max_temperature": 32,
+    "plant_types": "Grasses, Shrubs, Trees",
+    "habitat_category": "GR",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 8,
+  "fields": {
+    "name": "Deserts",
+    "min_rainfall": 0,
+    "max_rainfall": 250,
+    "min_temperature": -40,
+    "max_temperature": 45,
+    "plant_types": "Cacti, Grasses, Shrubs",
+    "habitat_category": "DE",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 9,
+  "fields": {
+    "name": "Desert Scrublands",
+    "min_rainfall": 380,
+    "max_rainfall": 1000,
+    "min_temperature": -1,
+    "max_temperature": 37,
+    "plant_types": "Cacti, Shrubs, Trees",
+    "habitat_category": "DE",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 10,
+  "fields": {
+    "name": "Open Ocean",
+    "min_rainfall": 1524,
+    "max_rainfall": 6350,
+    "min_temperature": 0,
+    "max_temperature": 17,
+    "plant_types": "Seaweeds",
+    "habitat_category": "AQ",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 11,
+  "fields": {
+    "name": "Deep Ocean",
+    "min_rainfall": 1524,
+    "max_rainfall": 6350,
+    "min_temperature": 0,
+    "max_temperature": 3,
+    "plant_types": "Seaweeds, Phytoplankton, Sea Grasses",
+    "habitat_category": "AQ",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 12,
+  "fields": {
+    "name": "Coral Reefs",
+    "min_rainfall": 250,
+    "max_rainfall": 2032,
+    "min_temperature": 18,
+    "max_temperature": 40,
+    "plant_types": "Algae, Mangroves, Seagrasses",
+    "habitat_category": "AQ",
+    "threats": []
+  }
+},
+{
+  "model": "animals.habitat",
+  "pk": 13,
+  "fields": {
+    "name": "Urban Areas",
+    "min_rainfall": 250,
+    "max_rainfall": 1500,
+    "min_temperature": -20,
+    "max_temperature": 45,
+    "plant_types": "Grasses, Shrubs, Trees",
+    "habitat_category": "UR",
+    "threats": []
+  }
+},
+{
+  "model": "animals.classification",
+  "pk": 1,
+  "fields": {
+    "classification": "Mammal"
+  }
+},
+{
+  "model": "animals.classification",
+  "pk": 2,
+  "fields": {
+    "classification": "Amphibian"
+  }
+},
+{
+  "model": "animals.classification",
+  "pk": 3,
+  "fields": {
+    "classification": "Fish"
+  }
+},
+{
+  "model": "animals.classification",
+  "pk": 4,
+  "fields": {
+    "classification": "Reptile"
+  }
+},
+{
+  "model": "animals.classification",
+  "pk": 5,
+  "fields": {
+    "classification": "Bird"
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 1,
+  "fields": {
+    "name": "Great White Shark",
+    "scientific_name": "Carcharodon carcharias",
+    "average_lifespan": 40,
+    "size": 15.0,
+    "size_unit": "feet",
+    "weight": 2.5,
+    "weight_unit": "tonnes",
+    "facts": "Great Whites can detect one drop of blood in 25 gallons of water.",
+    "diet": "CA",
+    "classification": 3,
+    "habitats": 10,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 2,
+  "fields": {
+    "name": "Tiger Shark",
+    "scientific_name": "Galeocerdo cuvier",
+    "average_lifespan": 15,
+    "size": 10.0,
+    "size_unit": "feet",
+    "weight": 850.0,
+    "weight_unit": "pounds",
+    "facts": "Tiger sharks will eat anything, including other sharks, license plates, and tires.",
+    "diet": "CA",
+    "classification": 3,
+    "habitats": 10,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 3,
+  "fields": {
+    "name": "Sand Tiger Shark",
+    "scientific_name": "Carcharias taurus",
+    "average_lifespan": 15,
+    "size": 6.5,
+    "size_unit": "feet",
+    "weight": 200.0,
+    "weight_unit": "pounds",
+    "facts": "Sand Tiger pups eat their siblings in utero, a kind of cannibalism unique to the species.",
+    "diet": "CA",
+    "classification": 3,
+    "habitats": 10,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 4,
+  "fields": {
+    "name": "Siberian Tiger",
+    "scientific_name": "Panthera tigris altaica",
+    "average_lifespan": 16,
+    "size": 10.75,
+    "size_unit": "feet",
+    "weight": 660.0,
+    "weight_unit": "pounds",
+    "facts": "There are approximately less than 600 Siberian tigers remaining in the wild.",
+    "diet": "CA",
+    "classification": 1,
+    "habitats": 5,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 5,
+  "fields": {
+    "name": "Bengal Tiger",
+    "scientific_name": "Panthera tigris tigris",
+    "average_lifespan": 8,
+    "size": 5.0,
+    "size_unit": "feet",
+    "weight": 240.0,
+    "weight_unit": "pounds",
+    "facts": "The Bengal tiger is India's national animal - and one of the country's largest draws.",
+    "diet": "CA",
+    "classification": 1,
+    "habitats": 3,
+    "threats": []
+  }
+}
+]

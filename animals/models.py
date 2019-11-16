@@ -17,14 +17,15 @@ class Habitat(models.Model):
     max_rainfall = models.IntegerField()
     min_temperature = models.IntegerField()
     max_temperature = models.IntegerField()
-    plant_types = models.CharField(max_length=200)
+    plant_types = models.CharField(max_length=200, blank=True)
 
     habitat_choices = (
         ('AQ', 'Aquatic'),
         ('DE', 'Desert'),
         ('TU', 'Tundra'),
         ('FO', 'Forest'),
-        ('GR', 'Grassland')
+        ('GR', 'Grassland'),
+        ('UR', 'Urban')
     )
     habitat_category = models.CharField(max_length=20, choices=habitat_choices, default='')
 
@@ -52,8 +53,10 @@ class Animal(models.Model):
     name = models.CharField(max_length=30, unique=True)
     scientific_name = models.CharField(max_length=100, unique=True)
     average_lifespan = models.IntegerField()
-    size = models.IntegerField()
-    weight = models.IntegerField()
+    size = models.FloatField()
+    size_unit = models.CharField(max_length=30, default='')
+    weight = models.FloatField()
+    weight_unit = models.CharField(max_length=30, default='')
     facts = models.CharField(max_length=300, blank=True)
 
     diet_choices = (

@@ -1,0 +1,19 @@
+.home {
+  display: flex;
+  flex-direction: column;
+
+  .home-banner {
+    height: 500px;
+    background-image: url('https://cdn.britannica.com/05/75105-050-7FAA611D/Pride-lions.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  
+}
