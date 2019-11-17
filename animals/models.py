@@ -50,7 +50,7 @@ class Classification(models.Model):
 
 # ANIMAL MODEL
 class Animal(models.Model):
-    name = models.CharField(max_length=30, unique=True)
+    name = models.CharField(max_length=50, unique=True)
     scientific_name = models.CharField(max_length=100, unique=True)
     average_lifespan = models.IntegerField()
     size = models.FloatField()

@@ -182,6 +182,20 @@
   }
 },
 {
+  "model": "animals.habitat",
+  "pk": 14,
+  "fields": {
+    "name": "Rivers",
+    "min_rainfall": 254,
+    "max_rainfall": 2032,
+    "min_temperature": 1,
+    "max_temperature": 23,
+    "plant_types": "Algae, Mosses, Submerged Plants",
+    "habitat_category": "AQ",
+    "threats": []
+  }
+},
+{
   "model": "animals.classification",
   "pk": 1,
   "fields": {
@@ -227,7 +241,7 @@
     "size_unit": "feet",
     "weight": 2.5,
     "weight_unit": "tonnes",
-    "facts": "Great Whites can detect one drop of blood in 25 gallons of water.",
+    "facts": "Great whites can detect one drop of blood in 25 gallons of water.",
     "diet": "CA",
     "classification": 3,
     "habitats": 10,
@@ -248,7 +262,7 @@
     "facts": "Tiger sharks will eat anything, including other sharks, license plates, and tires.",
     "diet": "CA",
     "classification": 3,
-    "habitats": 10,
+    "habitats": 12,
     "threats": []
   }
 },
@@ -263,10 +277,10 @@
     "size_unit": "feet",
     "weight": 200.0,
     "weight_unit": "pounds",
-    "facts": "Sand Tiger pups eat their siblings in utero, a kind of cannibalism unique to the species.",
+    "facts": "Sand tiger pups eat their siblings in utero, a kind of cannibalism unique to the species.",
     "diet": "CA",
     "classification": 3,
-    "habitats": 10,
+    "habitats": 12,
     "threats": []
   }
 },
@@ -299,10 +313,442 @@
     "size_unit": "feet",
     "weight": 240.0,
     "weight_unit": "pounds",
-    "facts": "The Bengal tiger is India's national animal - and one of the country's largest draws.",
+    "facts": "The bengal tiger is India's national animal - and one of the country's largest draws.",
     "diet": "CA",
     "classification": 1,
     "habitats": 3,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 6,
+  "fields": {
+    "name": "Bull Shark",
+    "scientific_name": "Carcharhinus leucas",
+    "average_lifespan": 16,
+    "size": 7.0,
+    "size_unit": "feet",
+    "weight": 200.0,
+    "weight_unit": "pounds",
+    "facts": "Bull sharks have been seen leaping up river rapids, salmon-like, to reach inland lakes.",
+    "diet": "CA",
+    "classification": 3,
+    "habitats": 12,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 7,
+  "fields": {
+    "name": "Nurse Shark",
+    "scientific_name": "Ginglymostoma cirratum",
+    "average_lifespan": 25,
+    "size": 7.5,
+    "size_unit": "feet",
+    "weight": 200.0,
+    "weight_unit": "pounds",
+    "facts": "During the day,  nurse sharks rest on the seafloor in giant piles.",
+    "diet": "CA",
+    "classification": 3,
+    "habitats": 12,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 8,
+  "fields": {
+    "name": "Walrus",
+    "scientific_name": "Odobenus rosmarus",
+    "average_lifespan": 40,
+    "size": 7.25,
+    "size_unit": "feet",
+    "weight": 1.5,
+    "weight_unit": "tonnes",
+    "facts": "Hooked onto ice like an axe, tusks help walruses climb out of the sea.",
+    "diet": "CA",
+    "classification": 1,
+    "habitats": 2,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 9,
+  "fields": {
+    "name": "Leopard Seal",
+    "scientific_name": "Hydrurga leptonyx",
+    "average_lifespan": 12,
+    "size": 10.0,
+    "size_unit": "feet",
+    "weight": 840.0,
+    "weight_unit": "pounds",
+    "facts": "Leopard seals are the only known seals to regularly hunt warm-blooded prey.",
+    "diet": "CA",
+    "classification": 1,
+    "habitats": 2,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 10,
+  "fields": {
+    "name": "Emperor Penguin",
+    "scientific_name": "Aptenodytes forsteri",
+    "average_lifespan": 15,
+    "size": 45.0,
+    "size_unit": "inches",
+    "weight": 88.0,
+    "weight_unit": "pounds",
+    "facts": "Emperors are the largest of all penguins.",
+    "diet": "CA",
+    "classification": 5,
+    "habitats": 2,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 11,
+  "fields": {
+    "name": "Polar Bear",
+    "scientific_name": "Ursus maritimus",
+    "average_lifespan": 25,
+    "size": 7.25,
+    "size_unit": "feet",
+    "weight": 900.0,
+    "weight_unit": "pounds",
+    "facts": "Polar bears have black skin and although their fur appears white, it is actually transparent.",
+    "diet": "CA",
+    "classification": 1,
+    "habitats": 2,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 12,
+  "fields": {
+    "name": "Arctic Fox",
+    "scientific_name": "Vulpes lagopus",
+    "average_lifespan": 3,
+    "size": 18.0,
+    "size_unit": "inches",
+    "weight": 6.5,
+    "weight_unit": "pounds",
+    "facts": "In summer, arctic foxes shed their winter coats for brown and cream fur.",
+    "diet": "OM",
+    "classification": 1,
+    "habitats": 2,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 13,
+  "fields": {
+    "name": "African Lion",
+    "scientific_name": "Panthera leo",
+    "average_lifespan": 15,
+    "size": 4.5,
+    "size_unit": "feet",
+    "weight": 265.0,
+    "weight_unit": "pounds",
+    "facts": "African lions prefer to hunt on dark nights, when the moon is below the horizon.",
+    "diet": "CA",
+    "classification": 1,
+    "habitats": 6,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 14,
+  "fields": {
+    "name": "Cheetah",
+    "scientific_name": "Acinonyx jubatus",
+    "average_lifespan": 10,
+    "size": 3.5,
+    "size_unit": "feet",
+    "weight": 77.0,
+    "weight_unit": "pounds",
+    "facts": "Cheetahs are the only big cats that can\u2019t roar.",
+    "diet": "CA",
+    "classification": 1,
+    "habitats": 6,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 15,
+  "fields": {
+    "name": "Jaguar",
+    "scientific_name": "Panthera onca",
+    "average_lifespan": 12,
+    "size": 5.0,
+    "size_unit": "feet",
+    "weight": 100.0,
+    "weight_unit": "pounds",
+    "facts": "Jaguars have massively thick skulls.",
+    "diet": "CA",
+    "classification": 1,
+    "habitats": 3,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 16,
+  "fields": {
+    "name": "Leopard",
+    "scientific_name": "Panthera pardus",
+    "average_lifespan": 12,
+    "size": 4.25,
+    "size_unit": "feet",
+    "weight": 66.0,
+    "weight_unit": "pounds",
+    "facts": "Leopards drag their kills up into trees to protect them from hyenas and other competitors.",
+    "diet": "CA",
+    "classification": 1,
+    "habitats": 6,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 17,
+  "fields": {
+    "name": "Plains Zebra",
+    "scientific_name": "Equus quagga",
+    "average_lifespan": 25,
+    "size": 3.5,
+    "size_unit": "feet",
+    "weight": 440.0,
+    "weight_unit": "pounds",
+    "facts": "Every zebra has a unique pattern of black and white stripes.",
+    "diet": "HE",
+    "classification": 1,
+    "habitats": 6,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 18,
+  "fields": {
+    "name": "Blue Wildebeest",
+    "scientific_name": "Connochaetes taurinus",
+    "average_lifespan": 20,
+    "size": 4.5,
+    "size_unit": "feet",
+    "weight": 330.0,
+    "weight_unit": "pounds",
+    "facts": "New calves are able to walk on their own within minutes of being born and, within a few days, they can even outrun a lioness.",
+    "diet": "HE",
+    "classification": 1,
+    "habitats": 6,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 19,
+  "fields": {
+    "name": "African Buffalo",
+    "scientific_name": "Syncerus caffer",
+    "average_lifespan": 11,
+    "size": 4.0,
+    "size_unit": "feet",
+    "weight": 660.0,
+    "weight_unit": "pounds",
+    "facts": "African buffalo have eyesight so good they can spot a lion from over half a mile away.",
+    "diet": "HE",
+    "classification": 1,
+    "habitats": 6,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 20,
+  "fields": {
+    "name": "Hippopotamus",
+    "scientific_name": "Hippopotamus amphibious",
+    "average_lifespan": 40,
+    "size": 9.5,
+    "size_unit": "feet",
+    "weight": 1.5,
+    "weight_unit": "tonnes",
+    "facts": "Hippos graze on land only at night. Their days are spent resting in the water.",
+    "diet": "HE",
+    "classification": 1,
+    "habitats": 14,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 21,
+  "fields": {
+    "name": "Seahorse",
+    "scientific_name": "Hippocampus",
+    "average_lifespan": 1,
+    "size": 0.6,
+    "size_unit": "inches",
+    "weight": 7.0,
+    "weight_unit": "ounces",
+    "facts": "Some male seahorses can deliver a brood in the morning and be pregnant again by nightfall.",
+    "diet": "CA",
+    "classification": 3,
+    "habitats": 12,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 22,
+  "fields": {
+    "name": "Nile Crocodile",
+    "scientific_name": "Crocodylus niloticus",
+    "average_lifespan": 45,
+    "size": 16.0,
+    "size_unit": "feet",
+    "weight": 500.0,
+    "weight_unit": "pounds",
+    "facts": "Powerful legs let Nile crocodiles pull down adult wildebeests.",
+    "diet": "CA",
+    "classification": 4,
+    "habitats": 14,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 23,
+  "fields": {
+    "name": "American Alligator",
+    "scientific_name": "Alligator mississippiensis",
+    "average_lifespan": 35,
+    "size": 10.0,
+    "size_unit": "feet",
+    "weight": 1000.0,
+    "weight_unit": "pounds",
+    "facts": "Male alligators bellow to announce they are ready to mate.",
+    "diet": "CA",
+    "classification": 4,
+    "habitats": 14,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 24,
+  "fields": {
+    "name": "King Cobra",
+    "scientific_name": "Ophiophagus hannah",
+    "average_lifespan": 20,
+    "size": 13.0,
+    "size_unit": "feet",
+    "weight": 20.0,
+    "weight_unit": "pounds",
+    "facts": "The king cobra produces enough neurotoxin to kill an elephant with a single bite.",
+    "diet": "CA",
+    "classification": 4,
+    "habitats": 3,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 25,
+  "fields": {
+    "name": "Burmese Python",
+    "scientific_name": "Python bivitattus",
+    "average_lifespan": 20,
+    "size": 16.0,
+    "size_unit": "feet",
+    "weight": 200.0,
+    "weight_unit": "pounds",
+    "facts": "Burmese pythons can hold their breath underwater for up to 30 minutes.",
+    "diet": "CA",
+    "classification": 4,
+    "habitats": 3,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 26,
+  "fields": {
+    "name": "Black Mamba",
+    "scientific_name": "Dendroaspis polylepis",
+    "average_lifespan": 11,
+    "size": 14.0,
+    "size_unit": "feet",
+    "weight": 3.5,
+    "weight_unit": "pounds",
+    "facts": "The black mamba is Africa's largest venomous snake.",
+    "diet": "CA",
+    "classification": 4,
+    "habitats": 6,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 27,
+  "fields": {
+    "name": "Eastern Diamondback Rattlesnake",
+    "scientific_name": "Crotalus adamanteus",
+    "average_lifespan": 10,
+    "size": 5.5,
+    "size_unit": "feet",
+    "weight": 5.0,
+    "weight_unit": "pounds",
+    "facts": "Baby rattlers are often more dangerous than adults because they have less control over their venom.",
+    "diet": "CA",
+    "classification": 4,
+    "habitats": 4,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 28,
+  "fields": {
+    "name": "Red Kangaroo",
+    "scientific_name": "Macropus rufus",
+    "average_lifespan": 23,
+    "size": 3.25,
+    "size_unit": "feet",
+    "weight": 200.0,
+    "weight_unit": "pounds",
+    "facts": "The red kangaroo is the largest marsupial and the largest Australian mammal.",
+    "diet": "HE",
+    "classification": 1,
+    "habitats": 9,
+    "threats": []
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 29,
+  "fields": {
+    "name": "Wallabies",
+    "scientific_name": "Notamacropus",
+    "average_lifespan": 9,
+    "size": 12.0,
+    "size_unit": "inches",
+    "weight": 4.0,
+    "weight_unit": "pounds",
+    "facts": "The pademelon is the smallest wallaby species.",
+    "diet": "HE",
+    "classification": 1,
+    "habitats": 9,
     "threats": []
   }
 }
