@@ -1,9 +1,9 @@
-.habitat-show {
+.animal-show {
   display: flex;
   flex-direction: column;
 
   // top banner
-  .habitat-show-banner {
+  .animal-show-banner {
     height: 200px;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@
     background-color: orange;
     margin-top: 80px;
 
-    .habitat-show-heading {
+    .animal-show-heading {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -27,11 +27,11 @@
   }
 
   // content container
-  .habitat-show-content-container {
+  .animal-show-content-container {
+    width: 90%;
     display: flex;
     align-self: center;
     // align-self: center;
-    width: 90%;
     margin-top: 30px;
 
     .content-left {
@@ -40,23 +40,50 @@
       flex-direction: column;
       align-items: center;
       
-      .habitat-key-info {
-        width: 90%;
+      .animal-key-info {
+        width: 80%;
         display: flex;
 
-        ul {
-          width: 50%;
+        .info-left {
+          width: 60%;
+        }
+
+        .info-right {
+          width: 40%;
+        }
+
+        .info-left, .info-right {
           display: flex;
           flex-direction: column;
 
           div {
             font-size: 22px;
-            margin:5px 0;
-
-            li {
-              font-weight: bold;
-            }
+            margin:8px 0;
           }
+        }
+      }
+
+      .did-you-know {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        margin-top: 30px;
+        padding: 25px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+
+        h3 {
+          font-size: 20px;
+          text-transform: uppercase;
+          border-bottom: 2px solid $color-flame;
+          margin-bottom: 10px;
+        }
+
+        p{
+          font-size: 24px;
         }
       }
     }

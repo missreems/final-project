@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 class AnimalShow extends React.Component {
@@ -24,9 +25,66 @@ class AnimalShow extends React.Component {
     if (!animal) return null
     return (
       <div className="animal-show">
-        <h1>Animal Show Page</h1>
-        <div className="animal-show-bkg-top"></div>
-        <div className="animal-show-bkg-bottom"></div>
+
+        <div className="animal-show-banner">
+          <div className="animal-show-heading">
+            <h1>{animal.name}</h1>
+          </div>
+        </div>
+
+        <div className="animal-show-content-container">
+
+          <div className="content-left">
+            <div className="animal-key-info">
+              <div className="info-left">
+                <div>
+                  <h5>Scientific Name:</h5>
+                  <p>{animal.scientific_name}</p>
+                </div>
+                <div>
+                  <h5>Classification:</h5>
+                  <p>{animal.classification.classification}</p>
+                </div>
+                <div>
+                  <h5>Habitat:</h5>
+                  <p>{animal.habitats.name}</p>
+                </div>
+                <div>
+                  <h5>Diet:</h5>
+                  <p>{animal.diet}</p>
+                </div>
+              </div>
+              <div className="info-right">
+                <div>
+                  <h5>Average Lifespan:</h5>
+                  <p>{animal.average_lifespan} years</p>
+                </div>
+                <div>
+                  <h5>Size:</h5>
+                  <p>{animal.size} {animal.size_unit}</p>
+                </div>
+                <div>
+                  <h5>Weight:</h5>
+                  <p>{animal.weight} {animal.weight_unit}</p>
+                </div>
+              </div>
+            </div>
+            <div className="did-you-know">
+              <h3>Did you know?</h3>
+              <p>{animal.fact}</p>
+            </div>
+            <div>DESCRIPTIONS</div>
+          </div>
+
+          <div className="content-right">
+            <img src={animal.images[0].image}></img>
+            <div className="show-images">
+              <img src={animal.images[0].image}></img>
+              <img src={animal.images[0].image}></img> 
+            </div>
+          </div>
+
+        </div>
       </div>
     )
   }

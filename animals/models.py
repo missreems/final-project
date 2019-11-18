@@ -57,7 +57,7 @@ class Animal(models.Model):
     size_unit = models.CharField(max_length=30, default='')
     weight = models.FloatField()
     weight_unit = models.CharField(max_length=30, default='')
-    facts = models.CharField(max_length=300, blank=True)
+    fact = models.CharField(max_length=300, blank=True)
 
     diet_choices = (
       ('HE', 'Herbivore'),

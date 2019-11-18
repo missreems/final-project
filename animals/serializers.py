@@ -5,7 +5,7 @@ from .models import Animal, Classification, Habitat, Threat, Description, Image
 class NestedAnimalSerializer(serializers.ModelSerializer):
     class Meta:
         model = Animal
-        fields = ('id', 'name', 'scientific_name', 'average_lifespan', 'size', 'size_unit', 'weight', 'weight_unit', 'facts', 'diet')
+        fields = ('id', 'name', 'scientific_name', 'average_lifespan', 'size', 'size_unit', 'weight', 'weight_unit', 'fact', 'diet')
 
 class NestedHabitatSerializer(serializers.ModelSerializer):
     class Meta:
@@ -69,4 +69,4 @@ class AnimalSerializer(serializers.ModelSerializer):
     images = NestedImageSerializer(many=True)
     class Meta:
         model = Animal
-        fields = ('id', 'name', 'scientific_name', 'average_lifespan', 'size', 'size_unit', 'weight', 'weight_unit', 'facts', 'diet', 'classification', 'habitats', 'threats', 'descriptions', 'images')
+        fields = ('id', 'name', 'scientific_name', 'average_lifespan', 'size', 'size_unit', 'weight', 'weight_unit', 'fact', 'diet', 'classification', 'habitats', 'threats', 'descriptions', 'images')

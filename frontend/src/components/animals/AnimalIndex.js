@@ -8,36 +8,12 @@ class AnimalIndex extends React.Component {
     super()
 
     this.state = {
-      animals: null
+      animals: null, 
+      chosenLetter: ''
     }
-    this.letters = {
-      A: 'A',
-      B: 'B',
-      C: 'C',
-      D: 'D',
-      E: 'E',
-      F: 'F',
-      G: 'G',
-      H: 'H',
-      I: 'I',
-      J: 'J',
-      K: 'K',
-      L: 'L',
-      M: 'M',
-      N: 'N',
-      O: 'O',
-      P: 'P',
-      Q: 'Q',
-      R: 'R',
-      S: 'S',
-      T: 'T',
-      U: 'U',
-      V: 'V',
-      W: 'W',
-      X: 'X',
-      Y: 'Y',
-      Z: 'Z'
-    }
+
+    this.alphabet = []
+  
 
     this.handleClick = this.handleClick.bind(this)
 
@@ -45,63 +21,59 @@ class AnimalIndex extends React.Component {
     // const sortedArray = [...this.state.animals].sort((a, b) => a.name > b.name)
   }
 
+  // create alphabet array
+  populateAlphabet() {
+    for ( let i = 65; i < 91; i++) {
+      const letter = String.fromCharCode(i)
+      this.alphabet.push(letter)
+    }
+  }
+
   componentDidMount() {
+    this.populateAlphabet()
     axios.get('/api/animals')
       .then(res => this.setState({ animals: res.data }))
       .catch(err => console.log(err))
   }
 
+  handleClick(e){
+    this.setState({ chosenLetter: e.target.value })
+  }
+
   // filter animals according to the letter clicked
-  handleClick(letter){
-    return this.state.animals.filter(animal => animal.charAt(0) === letter)
+  filteredAnimals() {
+    const { animals, chosenLetter } = this.state
+    return animals.filter(animal => {
+      if (animal.name.charAt(0) === chosenLetter || chosenLetter === '')
+        return animal
+    }).sort()
   }
   
-
   render() {
     console.log(this.state)
     const { animals } = this.state
     if (!animals) return null
     return (
       <div className="animal-index">
-        <div className="animal-index-banner"></div>
 
-        <div className="animal-index-content-container">
+        <div className="animal-index-banner">
           <div className="animal-index-heading">
             <h1>Animals</h1>
           </div>
+        </div>
+
+        <div className="animal-index-content-container">
           <div className="alphabet-buttons">
-            <div>A</div>
-            <div>B</div>
-            <div>C</div>
-            <div>D</div>
-            <div onClick={this.handleClick}>E</div>
-            <div>F</div>
-            <div>G</div>
-            <div>H</div>
-            <div>I</div>
-            <div>J</div>
-            <div>K</div>
-            <div>L</div>
-            <div>M</div>
-            <div>N</div>
-            <div>O</div>
-            <div>P</div>
-            <div>Q</div>
-            <div>R</div>
-            <div>S</div>
-            <div>T</div>
-            <div>U</div>
-            <div>V</div>
-            <div>W</div>
-            <div>X</div>
-            <div>Y</div>
-            <div>Z</div>
+            {this.alphabet.map((letter, i) => <button onClick={this.handleClick} key={i} value={letter}>{letter}</button>)}
           </div>
+
           <div  className="animal-index-card-container">
-            {animals.map(animal =>
+           
+            {this.filteredAnimals().map(animal =>
               <Link to={`/animals/${animal.id}`} key={animal.id} className="animal-index-card">{animal.name}</Link>
             )}
           </div>
+
         </div>
       </div>
     )

@@ -1,6 +1,6 @@
 // fonts
 @import url('https://fonts.googleapis.com/css?family=Oldenburg&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Thasadith:400,700&display=swap');
 
 // website structure
 @import './structure/structure';
@@ -18,11 +18,13 @@
 
 // main - habitats show
 @import './main/habitats/habitat-show/habitat-show';
-@import './main/habitats/habitat-show/content-left';
-@import './main/habitats/habitat-show/content-right';
 
-// main - animals
+// main - animals - index
 @import './main/animals/animal-index';
+
+// main - animals - show
+@import './main/animals/animal-show';
+
 
 // footer
 @import './footer/footer';

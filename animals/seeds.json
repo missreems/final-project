@@ -751,5 +751,236 @@
     "habitats": 9,
     "threats": []
   }
+},
+{
+  "model": "animals.image",
+  "pk": 1,
+  "fields": {
+    "brief": "Habitat - Savanna - lone tree",
+    "image": "https://images.unsplash.com/photo-1551176830-18551e6883bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1653&q=80",
+    "threat": null,
+    "animal": null,
+    "habitat": 6
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 2,
+  "fields": {
+    "brief": "Habitat - Savanna - open field",
+    "image": "https://images.unsplash.com/photo-1535940360221-641a69c43bac?ixlib=rb-1.2.1&auto=format&fit=crop&w=1647&q=80",
+    "threat": null,
+    "animal": null,
+    "habitat": 6
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 3,
+  "fields": {
+    "brief": "Habitat - Savanna - dry plains",
+    "image": "https://img1.goodfon.com/wallpaper/nbig/8/d5/afrika-yuzhnaya-afrika-namibiya.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 6
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 4,
+  "fields": {
+    "brief": "Habitat - Mountains - green mountain view",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/MassifMontBlanc7438.JPG",
+    "threat": null,
+    "animal": null,
+    "habitat": 1
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 5,
+  "fields": {
+    "brief": "Habitat - Mountains - icy mountains",
+    "image": "https://img5.onthesnow.com/image/xl/11/1186.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 1
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 6,
+  "fields": {
+    "brief": "Habitat - Mountains - greenery",
+    "image": "https://huerfanoworldjournal.com/wp-content/uploads/2018/06/1823-HFO-MAcedo-medano-lake-006.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 1
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 7,
+  "fields": {
+    "brief": "Habitat - Polar Regions - sunny snow",
+    "image": "https://secure.i.telegraph.co.uk/multimedia/archive/02013/arctic-ice-sun_2013816i.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 2
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 8,
+  "fields": {
+    "brief": "Habitat - Polar Regions - sunny mountainy",
+    "image": "http://prod-upp-image-read.ft.com/44ab6d42-780a-11e6-a0c6-39e2633162d5",
+    "threat": null,
+    "animal": null,
+    "habitat": 2
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 9,
+  "fields": {
+    "brief": "Habitat - Polar Regions - floating ice",
+    "image": "http://www.earthtimes.org/newsimage/arctic-sea-ice-loss-lets-pacific-sea-life-atlantic_266.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 2
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 10,
+  "fields": {
+    "brief": "Habitat - Rainforest - misty rainforest",
+    "image": "https://www.nature.uni-freiburg.de/bilder/forschung/Regenwald",
+    "threat": null,
+    "animal": null,
+    "habitat": 3
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 11,
+  "fields": {
+    "brief": "Habitat - Rainforest - rainforest river",
+    "image": "https://physicsworld.com/wp-content/uploads/2019/06/Amazon-rainforest-482799971-iStock_edsongrandisoli.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 3
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 12,
+  "fields": {
+    "brief": "Habitat - Rainforest - rainforest stream",
+    "image": "https://www.fredericdemeuse.com/wp-content/uploads/2017/09/28-nature-photography-forest-photography-temperate-rainforest-olympic-peninsula.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 3
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 13,
+  "fields": {
+    "brief": "Habitat - Woodlands - autumn woodland",
+    "image": "http://focusforestry.co.uk/wp-content/uploads/forestry-woodland-management.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 4
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 14,
+  "fields": {
+    "brief": "Habitat - Woodlands - green woodland",
+    "image": "https://www.ecolandscaping.org/wp-content/uploads/2018/04/Ferns-in-Woodland.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 4
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 15,
+  "fields": {
+    "brief": "Habitat - Woodlands - greenery",
+    "image": "https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/50/2019/10/GettyImages-549213657_352938032_617492392-920x614.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 4
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 16,
+  "fields": {
+    "brief": "Habitat - Coniferous - autumn",
+    "image": "https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/sn-forest_0.jpg?itok=iR_ZikIp",
+    "threat": null,
+    "animal": null,
+    "habitat": 5
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 17,
+  "fields": {
+    "brief": "Habitat - Coniferous - water",
+    "image": "https://cdn.thinglink.me/api/image/724006096527687680/1240/10/scaletowidth",
+    "threat": null,
+    "animal": null,
+    "habitat": 5
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 18,
+  "fields": {
+    "brief": "Habitat - Coniferous - forest",
+    "image": "http://www.coniferousforest.com/wp-content/uploads/2015/02/Coniferous-Forest.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 5
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 19,
+  "fields": {
+    "brief": "Habitat - Temperate - sunrise",
+    "image": "https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/0fed3dfce8f34c76aefc96143c9438c3",
+    "threat": null,
+    "animal": null,
+    "habitat": 7
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 20,
+  "fields": {
+    "brief": "Habitat - Temperate - greenery",
+    "image": "http://assets.worldwildlife.org/photos/4287/images/story_full_width/NGP_Hargreaves.jpg?1370354523",
+    "threat": null,
+    "animal": null,
+    "habitat": 7
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 21,
+  "fields": {
+    "brief": "Habitat - Temperate - trees",
+    "image": "https://i.pinimg.com/originals/8e/a1/c2/8ea1c2bdf25c6b0fd9701fada740ff26.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 7
+  }
 }
 ]
