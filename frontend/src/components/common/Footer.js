@@ -16,10 +16,10 @@ class Footer extends React.Component {
           <div className="footer-nav">
             <h3>Explore Animalia</h3>
             <div>
-              <Link>Home</Link>
-              <Link>Habitats</Link>
-              <Link>Animals</Link>
-              <Link>Contact</Link>
+              <Link to='/'>Home</Link>
+              <Link to='/habitats'>Habitats</Link>
+              <Link to='/animals'>Animals</Link>
+              <Link to='/contact'>Contact</Link>
             </div>
           </div>
         </div>

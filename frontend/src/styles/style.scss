@@ -11,7 +11,7 @@
 // main - home
 @import './main/home/home';
 @import './main/home/search-banner';
-@import './main/home/popular-animals';
+@import './main/home/animal-kingdom';
 
 // main - habitats - index
 @import './main/habitats/habitat_index';
@@ -25,6 +25,8 @@
 // main - animals - show
 @import './main/animals/animal-show';
 
+// main - contact
+@import './main/contact';
 
 // footer
 @import './footer/footer';

@@ -14,8 +14,14 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div className="popular-animals-banner"></div>
-        <div>content</div>
+        <div className="animal-kingdom-banner">
+          <div className="animal-index-heading">
+            <h1>Animal Kingdom</h1>
+          </div>
+          <div className="animal-index-content-container">
+            <div  className="animal-index-card-container"></div>
+          </div>
+        </div>
 
       </div>
     )
