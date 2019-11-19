@@ -68,9 +68,13 @@ class AnimalIndex extends React.Component {
           </div>
 
           <div  className="animal-index-card-container">
-           
             {this.filteredAnimals().map(animal =>
-              <Link to={`/animals/${animal.id}`} key={animal.id} className="animal-index-card">{animal.name}</Link>
+              <Link to={`/animals/${animal.id}`} key={animal.id}>
+                <div className="animal-index-card">
+                  {/* <img src={animal.images[0].image}></img> */}
+                  <h5 className="centered">{animal.name}</h5>
+                </div>
+              </Link>
             )}
           </div>
 

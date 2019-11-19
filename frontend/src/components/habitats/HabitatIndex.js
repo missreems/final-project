@@ -34,7 +34,13 @@ class HabitatIndex extends React.Component {
         <div className="habitat-index-content-container">
           <div  className="habitat-index-card-container">
             {habitats.map(habitat =>
-              <Link to={`/habitats/${habitat.id}`} key={habitat.id} className="habitat-index-card">{habitat.name}</Link>
+              <Link to={`/habitats/${habitat.id}`} key={habitat.id}>
+
+                <div className="habitat-index-card">
+                  <img src={habitat.images[0].image}></img>
+                  <h5 className="centered">{habitat.name}</h5>
+                </div>
+              </Link>
             )}
           </div>
         </div>
@@ -45,10 +51,3 @@ class HabitatIndex extends React.Component {
 }
 
 export default HabitatIndex
-
-// habitat show page
-{/* <div>
-        <h1>Habitat Show Page</h1>
-        <div className="habitat-show-bkg-top"></div>
-        <div className="habitat-show-bkg-bottom"></div>
-      </div> */}

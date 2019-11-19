@@ -10,7 +10,7 @@ class Header extends React.Component {
           <Nav />
         </div>
         <div className="header-bottom">
-          <h1>ANIMALIVE</h1>
+          <h1>ANIMALIA</h1>
         </div>
       </header>
     )

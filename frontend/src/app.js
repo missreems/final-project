@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './styles/style.scss'
 
 import Header from './components/common/Header'
-import Home from './components/common/Home'
+import Home from './components/common/Home/Home'
 import HabitatIndex from './components/habitats/HabitatIndex'
 import HabitatShow from './components/habitats/HabitatShow'
 import AnimalIndex from './components/animals/AnimalIndex'
