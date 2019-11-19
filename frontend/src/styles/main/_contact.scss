@@ -26,6 +26,7 @@
   
       h1 {
         font-size: 50px;
+        text-transform: uppercase;
       }
     }
   }
@@ -52,9 +53,14 @@
       text-align: center;
       margin-top: 30px;
 
-      h4 {
-        font-size: 18px;
+      div {
+        margin: 5px 0;
+
+        h4 {
+          font-size: 18px;
+        }
       }
+      
     }
 
     .forms {

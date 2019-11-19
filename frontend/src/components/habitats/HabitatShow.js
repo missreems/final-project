@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 class HabitatShow extends React.Component {
@@ -39,31 +40,46 @@ class HabitatShow extends React.Component {
         </div>
 
         <div className="habitat-show-content-container">
-
           <div className="content-left">
             <div className="habitat-key-info">
-              <ul>
+              <div className="info-left">
                 <div>
-                  <li>Habitat Category:</li>
+                  <h5>Habitat Category:</h5>
                   <p>{habitat.name}</p>
                 </div>
                 <div>
-                  <li>Plant types:</li>
+                  <h5>Plant types:</h5>
                   <p>{habitat.plant_types}</p>
                 </div>
-              </ul>
-              <ul>
+              </div>
+              <div className="info-right">
                 <div>
-                  <li>Average Yearly Rainfall:</li>
-                  <p>{habitat.min_rainfall} to {habitat.max_rainfall}</p>
+                  <h5>Average Yearly Rainfall:</h5>
+                  <p>{habitat.min_rainfall} to {habitat.max_rainfall}mm</p>
                 </div>
                 <div>
-                  <li>Average Temperature:</li>
+                  <h5>Average Temperature:</h5>
                   <p>{habitat.min_temperature} to {habitat.max_temperature} &#8451;</p>
                 </div>
-              </ul>
+              </div>
             </div>
-            <div>DESCRIPTIONS</div>
+            <div className="descriptions">
+              {habitat.descriptions.map(description => 
+                <div key={description.id}>
+                  <h4>{description.heading}</h4>
+                  <p>{description.info}</p>
+                </div>
+              )}
+            </div>
+            <h4 className="animals-container-heading">Animals found in the {habitat.name}:</h4>
+            <div className="animals-container">
+              {habitat.animals.map(animal =>
+                <Link to={`/animals/${animal.id}`} key={animal.id} className="animal-card">
+                  <img src={habitat.animals.map(animal => animal.images.map(image => image.image))}></img>
+                  <h5 className="centered">{animal.name}</h5>
+                </Link>
+              ).slice(0, 6)}
+            </div>
           </div>
 
           <div className="content-right">
@@ -73,8 +89,9 @@ class HabitatShow extends React.Component {
               <img src={habitat.images[0].image}></img> 
             </div>
           </div>
-
         </div>
+
+        
       </div>
     )
   }

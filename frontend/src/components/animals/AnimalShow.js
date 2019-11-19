@@ -1,6 +1,5 @@
 import React from 'react'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
 
 
 class AnimalShow extends React.Component {
@@ -9,6 +8,11 @@ class AnimalShow extends React.Component {
 
     this.state = {
       animal: null
+    }
+    this.diets = {
+      HE: 'Herbivore',
+      OM: 'Omnivore',
+      CA: 'Carnivore'
     }
   }
 
@@ -20,9 +24,10 @@ class AnimalShow extends React.Component {
   }
 
   render() {
-    console.log(this.state)
+    
     const { animal } = this.state
     if (!animal) return null
+    console.log(this.state.animal.diet)
     return (
       <div className="animal-show">
 
@@ -51,7 +56,7 @@ class AnimalShow extends React.Component {
                 </div>
                 <div>
                   <h5>Diet:</h5>
-                  <p>{animal.diet}</p>
+                  <p>{this.diets[animal.diet]}</p>
                 </div>
               </div>
               <div className="info-right">
