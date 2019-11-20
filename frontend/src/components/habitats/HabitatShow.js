@@ -75,7 +75,7 @@ class HabitatShow extends React.Component {
             <div className="animals-container">
               {habitat.animals.map(animal =>
                 <Link to={`/animals/${animal.id}`} key={animal.id} className="animal-card">
-                  <img src={habitat.animals.map(animal => animal.images.map(image => image.image))}></img>
+                  <img src={animal.images.map(image => image.image)} alt={animal.name}></img>
                   <h5 className="centered">{animal.name}</h5>
                 </Link>
               ).slice(0, 6)}

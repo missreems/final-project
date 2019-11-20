@@ -2,11 +2,6 @@ from rest_framework import serializers
 from .models import Animal, Classification, Habitat, Threat, Description, Image
 
 # NESTED SERIALIZERS
-class NestedHabitatSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Habitat
-        fields = ('id', 'name', 'min_rainfall', 'max_rainfall', 'min_temperature', 'max_temperature', 'plant_types', 'habitat_category')
-
 class NestedThreatSerializer(serializers.ModelSerializer):
     class Meta:
         model = Threat
@@ -27,12 +22,18 @@ class NestedImageSerializer(serializers.ModelSerializer):
         model = Image
         fields = ('id', 'brief', 'image')
 
+class NestedHabitatSerializer(serializers.ModelSerializer):
+    images = NestedImageSerializer(many=True)
+    class Meta:
+        model = Habitat
+        fields = ('id', 'name', 'min_rainfall', 'max_rainfall', 'min_temperature', 'max_temperature', 'plant_types', 'habitat_category', 'images')
+
 class NestedAnimalSerializer(serializers.ModelSerializer):
     images = NestedImageSerializer(many=True)
     class Meta:
         model = Animal
         fields = ('id', 'name', 'scientific_name', 'average_lifespan', 'size', 'size_unit', 'weight', 'weight_unit', 'fact', 'diet', 'images')
-
+    
 
 # CORE SERIALIZERS
 class ThreatSerializer(serializers.ModelSerializer):

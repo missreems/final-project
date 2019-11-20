@@ -16,9 +16,9 @@ class AnimalIndex extends React.Component {
   
 
     this.handleClick = this.handleClick.bind(this)
+    
 
-    // sorting animals into alphabetical order
-    // const sortedArray = [...this.state.animals].sort((a, b) => a.name > b.name)
+   
   }
 
   // create alphabet array
@@ -43,10 +43,13 @@ class AnimalIndex extends React.Component {
   // filter animals according to the letter clicked
   filteredAnimals() {
     const { animals, chosenLetter } = this.state
-    return animals.filter(animal => {
+    const sortedArray = [...animals]
+    sortedArray.sort((a, b) => (a.name > b.name) ? 1 : -1)
+    console.log(sortedArray)
+    return sortedArray.filter(animal => {
       if (animal.name.charAt(0) === chosenLetter || chosenLetter === '')
         return animal
-    }).sort()
+    })
   }
   
   render() {
@@ -71,7 +74,7 @@ class AnimalIndex extends React.Component {
             {this.filteredAnimals().map(animal =>
               <Link to={`/animals/${animal.id}`} key={animal.id}>
                 <div className="animal-index-card">
-                  {/* <img src={animal.images[0].image}></img> */}
+                  <img src={animal.images[0].image} alt={animal.images[0].brief}></img>
                   <h5 className="centered">{animal.name}</h5>
                 </div>
               </Link>

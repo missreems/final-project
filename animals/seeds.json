@@ -22,7 +22,7 @@
     "max_rainfall": 250,
     "min_temperature": -88,
     "max_temperature": 15,
-    "plant_types": "",
+    "plant_types": "None",
     "habitat_category": "TU",
     "threats": []
   }
@@ -241,7 +241,7 @@
     "size_unit": "feet",
     "weight": 2.5,
     "weight_unit": "tonnes",
-    "facts": "Great whites can detect one drop of blood in 25 gallons of water.",
+    "fact": "Great whites can detect one drop of blood in 25 gallons of water.",
     "diet": "CA",
     "classification": 3,
     "habitats": 10,
@@ -259,7 +259,7 @@
     "size_unit": "feet",
     "weight": 850.0,
     "weight_unit": "pounds",
-    "facts": "Tiger sharks will eat anything, including other sharks, license plates, and tires.",
+    "fact": "Tiger sharks will eat anything, including other sharks, license plates, and tires.",
     "diet": "CA",
     "classification": 3,
     "habitats": 12,
@@ -277,7 +277,7 @@
     "size_unit": "feet",
     "weight": 200.0,
     "weight_unit": "pounds",
-    "facts": "Sand tiger pups eat their siblings in utero, a kind of cannibalism unique to the species.",
+    "fact": "Sand tiger pups eat their siblings in utero, a kind of cannibalism unique to the species.",
     "diet": "CA",
     "classification": 3,
     "habitats": 12,
@@ -295,7 +295,7 @@
     "size_unit": "feet",
     "weight": 660.0,
     "weight_unit": "pounds",
-    "facts": "There are approximately less than 600 Siberian tigers remaining in the wild.",
+    "fact": "There are approximately less than 600 Siberian tigers remaining in the wild.",
     "diet": "CA",
     "classification": 1,
     "habitats": 5,
@@ -313,7 +313,7 @@
     "size_unit": "feet",
     "weight": 240.0,
     "weight_unit": "pounds",
-    "facts": "The bengal tiger is India's national animal - and one of the country's largest draws.",
+    "fact": "The bengal tiger is India's national animal - and one of the country's largest draws.",
     "diet": "CA",
     "classification": 1,
     "habitats": 3,
@@ -331,7 +331,7 @@
     "size_unit": "feet",
     "weight": 200.0,
     "weight_unit": "pounds",
-    "facts": "Bull sharks have been seen leaping up river rapids, salmon-like, to reach inland lakes.",
+    "fact": "Bull sharks have been seen leaping up river rapids, salmon-like, to reach inland lakes.",
     "diet": "CA",
     "classification": 3,
     "habitats": 12,
@@ -349,7 +349,7 @@
     "size_unit": "feet",
     "weight": 200.0,
     "weight_unit": "pounds",
-    "facts": "During the day,  nurse sharks rest on the seafloor in giant piles.",
+    "fact": "During the day,  nurse sharks rest on the seafloor in giant piles.",
     "diet": "CA",
     "classification": 3,
     "habitats": 12,
@@ -367,7 +367,7 @@
     "size_unit": "feet",
     "weight": 1.5,
     "weight_unit": "tonnes",
-    "facts": "Hooked onto ice like an axe, tusks help walruses climb out of the sea.",
+    "fact": "Hooked onto ice like an axe, tusks help walruses climb out of the sea.",
     "diet": "CA",
     "classification": 1,
     "habitats": 2,
@@ -385,7 +385,7 @@
     "size_unit": "feet",
     "weight": 840.0,
     "weight_unit": "pounds",
-    "facts": "Leopard seals are the only known seals to regularly hunt warm-blooded prey.",
+    "fact": "Leopard seals are the only known seals to regularly hunt warm-blooded prey.",
     "diet": "CA",
     "classification": 1,
     "habitats": 2,
@@ -403,7 +403,7 @@
     "size_unit": "inches",
     "weight": 88.0,
     "weight_unit": "pounds",
-    "facts": "Emperors are the largest of all penguins.",
+    "fact": "Emperors are the largest of all penguins.",
     "diet": "CA",
     "classification": 5,
     "habitats": 2,
@@ -421,7 +421,7 @@
     "size_unit": "feet",
     "weight": 900.0,
     "weight_unit": "pounds",
-    "facts": "Polar bears have black skin and although their fur appears white, it is actually transparent.",
+    "fact": "Polar bears have black skin and although their fur appears white, it is actually transparent.",
     "diet": "CA",
     "classification": 1,
     "habitats": 2,
@@ -439,7 +439,7 @@
     "size_unit": "inches",
     "weight": 6.5,
     "weight_unit": "pounds",
-    "facts": "In summer, arctic foxes shed their winter coats for brown and cream fur.",
+    "fact": "In summer, arctic foxes shed their winter coats for brown and cream fur.",
     "diet": "OM",
     "classification": 1,
     "habitats": 2,
@@ -457,7 +457,7 @@
     "size_unit": "feet",
     "weight": 265.0,
     "weight_unit": "pounds",
-    "facts": "African lions prefer to hunt on dark nights, when the moon is below the horizon.",
+    "fact": "African lions prefer to hunt on dark nights, when the moon is below the horizon.",
     "diet": "CA",
     "classification": 1,
     "habitats": 6,
@@ -475,7 +475,7 @@
     "size_unit": "feet",
     "weight": 77.0,
     "weight_unit": "pounds",
-    "facts": "Cheetahs are the only big cats that can\u2019t roar.",
+    "fact": "Cheetahs are the only big cats that can\u2019t roar.",
     "diet": "CA",
     "classification": 1,
     "habitats": 6,
@@ -493,7 +493,7 @@
     "size_unit": "feet",
     "weight": 100.0,
     "weight_unit": "pounds",
-    "facts": "Jaguars have massively thick skulls.",
+    "fact": "Jaguars have massively thick skulls.",
     "diet": "CA",
     "classification": 1,
     "habitats": 3,
@@ -511,7 +511,7 @@
     "size_unit": "feet",
     "weight": 66.0,
     "weight_unit": "pounds",
-    "facts": "Leopards drag their kills up into trees to protect them from hyenas and other competitors.",
+    "fact": "Leopards drag their kills up into trees to protect them from hyenas and other competitors.",
     "diet": "CA",
     "classification": 1,
     "habitats": 6,
@@ -529,7 +529,7 @@
     "size_unit": "feet",
     "weight": 440.0,
     "weight_unit": "pounds",
-    "facts": "Every zebra has a unique pattern of black and white stripes.",
+    "fact": "Every zebra has a unique pattern of black and white stripes.",
     "diet": "HE",
     "classification": 1,
     "habitats": 6,
@@ -547,7 +547,7 @@
     "size_unit": "feet",
     "weight": 330.0,
     "weight_unit": "pounds",
-    "facts": "New calves are able to walk on their own within minutes of being born and, within a few days, they can even outrun a lioness.",
+    "fact": "New calves are able to walk on their own within minutes of being born and, within a few days, they can even outrun a lioness.",
     "diet": "HE",
     "classification": 1,
     "habitats": 6,
@@ -565,7 +565,7 @@
     "size_unit": "feet",
     "weight": 660.0,
     "weight_unit": "pounds",
-    "facts": "African buffalo have eyesight so good they can spot a lion from over half a mile away.",
+    "fact": "African buffalo have eyesight so good they can spot a lion from over half a mile away.",
     "diet": "HE",
     "classification": 1,
     "habitats": 6,
@@ -583,7 +583,7 @@
     "size_unit": "feet",
     "weight": 1.5,
     "weight_unit": "tonnes",
-    "facts": "Hippos graze on land only at night. Their days are spent resting in the water.",
+    "fact": "Hippos graze on land only at night. Their days are spent resting in the water.",
     "diet": "HE",
     "classification": 1,
     "habitats": 14,
@@ -601,7 +601,7 @@
     "size_unit": "inches",
     "weight": 7.0,
     "weight_unit": "ounces",
-    "facts": "Some male seahorses can deliver a brood in the morning and be pregnant again by nightfall.",
+    "fact": "Some male seahorses can deliver a brood in the morning and be pregnant again by nightfall.",
     "diet": "CA",
     "classification": 3,
     "habitats": 12,
@@ -619,7 +619,7 @@
     "size_unit": "feet",
     "weight": 500.0,
     "weight_unit": "pounds",
-    "facts": "Powerful legs let Nile crocodiles pull down adult wildebeests.",
+    "fact": "Powerful legs let Nile crocodiles pull down adult wildebeests.",
     "diet": "CA",
     "classification": 4,
     "habitats": 14,
@@ -637,7 +637,7 @@
     "size_unit": "feet",
     "weight": 1000.0,
     "weight_unit": "pounds",
-    "facts": "Male alligators bellow to announce they are ready to mate.",
+    "fact": "Male alligators bellow to announce they are ready to mate.",
     "diet": "CA",
     "classification": 4,
     "habitats": 14,
@@ -655,7 +655,7 @@
     "size_unit": "feet",
     "weight": 20.0,
     "weight_unit": "pounds",
-    "facts": "The king cobra produces enough neurotoxin to kill an elephant with a single bite.",
+    "fact": "The king cobra produces enough neurotoxin to kill an elephant with a single bite.",
     "diet": "CA",
     "classification": 4,
     "habitats": 3,
@@ -673,7 +673,7 @@
     "size_unit": "feet",
     "weight": 200.0,
     "weight_unit": "pounds",
-    "facts": "Burmese pythons can hold their breath underwater for up to 30 minutes.",
+    "fact": "Burmese pythons can hold their breath underwater for up to 30 minutes.",
     "diet": "CA",
     "classification": 4,
     "habitats": 3,
@@ -691,7 +691,7 @@
     "size_unit": "feet",
     "weight": 3.5,
     "weight_unit": "pounds",
-    "facts": "The black mamba is Africa's largest venomous snake.",
+    "fact": "The black mamba is Africa's largest venomous snake.",
     "diet": "CA",
     "classification": 4,
     "habitats": 6,
@@ -709,7 +709,7 @@
     "size_unit": "feet",
     "weight": 5.0,
     "weight_unit": "pounds",
-    "facts": "Baby rattlers are often more dangerous than adults because they have less control over their venom.",
+    "fact": "Baby rattlers are often more dangerous than adults because they have less control over their venom.",
     "diet": "CA",
     "classification": 4,
     "habitats": 4,
@@ -727,7 +727,7 @@
     "size_unit": "feet",
     "weight": 200.0,
     "weight_unit": "pounds",
-    "facts": "The red kangaroo is the largest marsupial and the largest Australian mammal.",
+    "fact": "The red kangaroo is the largest marsupial and the largest Australian mammal.",
     "diet": "HE",
     "classification": 1,
     "habitats": 9,
@@ -738,14 +738,14 @@
   "model": "animals.animal",
   "pk": 29,
   "fields": {
-    "name": "Wallabies",
+    "name": "Wallaby",
     "scientific_name": "Notamacropus",
     "average_lifespan": 9,
     "size": 12.0,
     "size_unit": "inches",
     "weight": 4.0,
     "weight_unit": "pounds",
-    "facts": "The pademelon is the smallest wallaby species.",
+    "fact": "The pademelon is the smallest wallaby species.",
     "diet": "HE",
     "classification": 1,
     "habitats": 9,
@@ -753,11 +753,23 @@
   }
 },
 {
+  "model": "animals.description",
+  "pk": 1,
+  "fields": {
+    "brief": "Savanna",
+    "heading": "Intro",
+    "info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "threat": null,
+    "animal": null,
+    "habitat": 6
+  }
+},
+{
   "model": "animals.image",
   "pk": 1,
   "fields": {
     "brief": "Habitat - Savanna - lone tree",
-    "image": "https://images.unsplash.com/photo-1551176830-18551e6883bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1653&q=80",
+    "image": "https://i.imgur.com/JGfY9yB.jpg",
     "threat": null,
     "animal": null,
     "habitat": 6
@@ -768,7 +780,7 @@
   "pk": 2,
   "fields": {
     "brief": "Habitat - Savanna - open field",
-    "image": "https://images.unsplash.com/photo-1535940360221-641a69c43bac?ixlib=rb-1.2.1&auto=format&fit=crop&w=1647&q=80",
+    "image": "https://i.imgur.com/CHlkUld.jpg",
     "threat": null,
     "animal": null,
     "habitat": 6
@@ -779,7 +791,7 @@
   "pk": 3,
   "fields": {
     "brief": "Habitat - Savanna - dry plains",
-    "image": "https://img1.goodfon.com/wallpaper/nbig/8/d5/afrika-yuzhnaya-afrika-namibiya.jpg",
+    "image": "https://i.imgur.com/Y3olEwC.jpg",
     "threat": null,
     "animal": null,
     "habitat": 6
@@ -790,7 +802,7 @@
   "pk": 4,
   "fields": {
     "brief": "Habitat - Mountains - green mountain view",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/MassifMontBlanc7438.JPG",
+    "image": "https://i.imgur.com/QG0RhFA.jpg",
     "threat": null,
     "animal": null,
     "habitat": 1
@@ -801,7 +813,7 @@
   "pk": 5,
   "fields": {
     "brief": "Habitat - Mountains - icy mountains",
-    "image": "https://img5.onthesnow.com/image/xl/11/1186.jpg",
+    "image": "https://i.imgur.com/Ab4YMdo.jpg",
     "threat": null,
     "animal": null,
     "habitat": 1
@@ -812,7 +824,7 @@
   "pk": 6,
   "fields": {
     "brief": "Habitat - Mountains - greenery",
-    "image": "https://huerfanoworldjournal.com/wp-content/uploads/2018/06/1823-HFO-MAcedo-medano-lake-006.jpg",
+    "image": "https://i.imgur.com/pFJZ7Bp.jpg",
     "threat": null,
     "animal": null,
     "habitat": 1
@@ -823,7 +835,7 @@
   "pk": 7,
   "fields": {
     "brief": "Habitat - Polar Regions - sunny snow",
-    "image": "https://secure.i.telegraph.co.uk/multimedia/archive/02013/arctic-ice-sun_2013816i.jpg",
+    "image": "https://i.imgur.com/UD86jOM.jpg",
     "threat": null,
     "animal": null,
     "habitat": 2
@@ -834,7 +846,7 @@
   "pk": 8,
   "fields": {
     "brief": "Habitat - Polar Regions - sunny mountainy",
-    "image": "http://prod-upp-image-read.ft.com/44ab6d42-780a-11e6-a0c6-39e2633162d5",
+    "image": "https://i.imgur.com/7h3rLR1.jpg",
     "threat": null,
     "animal": null,
     "habitat": 2
@@ -954,8 +966,8 @@
   "model": "animals.image",
   "pk": 19,
   "fields": {
-    "brief": "Habitat - Temperate - sunrise",
-    "image": "https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/0fed3dfce8f34c76aefc96143c9438c3",
+    "brief": "Habitat - Temperate - grass",
+    "image": "https://assets.labroots.com/_public/_files/system/ck/trending/buffalo-gap-national-grasslands-56d40df05f9b5879cc8e69ac_02d8d4f7932eeb5cc982551fa08028b8.jpg",
     "threat": null,
     "animal": null,
     "habitat": 7
@@ -981,6 +993,325 @@
     "threat": null,
     "animal": null,
     "habitat": 7
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 22,
+  "fields": {
+    "brief": "Habitat - Desert - tree",
+    "image": "https://cdn.pixabay.com/photo/2017/09/18/17/09/namib-desert-2762496_1280.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 8
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 23,
+  "fields": {
+    "brief": "Habitat - Desert - desert",
+    "image": "https://www.thoughtco.com/thmb/2-kTlvx0gTPzrS4xkei3GamkpTg=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/wave-pattern-desert-landscape--oman-886145780-5c45542046e0fb00012ebabf.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 8
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 24,
+  "fields": {
+    "brief": "Habitat - Desert - dry desert",
+    "image": "https://www.planetware.com/photos-large/USCA/california-death-valley-race-track.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 8
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 25,
+  "fields": {
+    "brief": "Habitat - Scrubland - trees",
+    "image": "https://www.abc.net.au/news/image/5299558-3x2-940x627.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 9
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 26,
+  "fields": {
+    "brief": "Habitat - Scrubland - bushes",
+    "image": "https://media.sciencephoto.com/image/c0230089/800wm",
+    "threat": null,
+    "animal": null,
+    "habitat": 9
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 27,
+  "fields": {
+    "brief": "Habitat - Scrubland - high view",
+    "image": "https://images.macalba.net/2011/08/20110527-outback2011--winton--outback-scrub.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 9
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 28,
+  "fields": {
+    "brief": "Habitat - Open Ocean - above sealevel",
+    "image": "https://oceana.org/sites/default/files/styles/lightbox_full/public/open-ocean_hero.jpg?itok=O5NKj3Kn",
+    "threat": null,
+    "animal": null,
+    "habitat": 10
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 29,
+  "fields": {
+    "brief": "Habitat - Open Ocean - underwater",
+    "image": "https://jooinn.com/images/water-under-1.png",
+    "threat": null,
+    "animal": null,
+    "habitat": 10
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 30,
+  "fields": {
+    "brief": "Habitat - Open Ocean - crashing waves",
+    "image": "https://www.theunknownblue.com/wp-content/uploads/2019/01/sandro-kradolfer-1077243-unsplash-1544903657041.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 10
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 31,
+  "fields": {
+    "brief": "Habitat - Deep Ocean - empty ocean",
+    "image": "https://thumbs-prod.si-cdn.com/2usRdNQ3zQ_p0I6NJj1QjVEnRTA=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/2e/40/2e40ed82-5cda-4068-8457-257d3f100b9d/42-25763390.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 11
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 32,
+  "fields": {
+    "brief": "Habitat - Deep Ocean - rocky",
+    "image": "https://www.sbs.com.au/topics/sites/sbs.com.au.topics/files/styles/full/public/deep_ocean.jpg?itok=ipl0FUgz&mtime=1471387538",
+    "threat": null,
+    "animal": null,
+    "habitat": 11
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 33,
+  "fields": {
+    "brief": "Habitat - Deep Ocean - sunray",
+    "image": "https://eastonialeopards.com/wp-content/uploads/2018/03/casey-900x589.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 11
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 34,
+  "fields": {
+    "brief": "Habitat - Coral Reef - colourful reef",
+    "image": "https://www.pobonline.com/ext/resources/images/GDP/GDP-features/coral-reef.jpg?1486749391",
+    "threat": null,
+    "animal": null,
+    "habitat": 12
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 35,
+  "fields": {
+    "brief": "Habitat - Coral Reef - above sealevel",
+    "image": "https://coral.org/wp-content/uploads/2013/10/CoralReef_FrenchPolynesia-1024x681.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 12
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 36,
+  "fields": {
+    "brief": "Habitat - Coral Reef - reef",
+    "image": "https://www.hawaiipublicradio.org/sites/khpr/files/styles/x_large/public/201907/coral_reef.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 12
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 37,
+  "fields": {
+    "brief": "Habitat - Urban - city park",
+    "image": "https://www.worldfinance.com/wp-content/uploads/2019/05/Infrastructure.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 13
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 38,
+  "fields": {
+    "brief": "Habitat - Urban - rural",
+    "image": "https://www.naturalspafactory.com/old-blog/wp-content/uploads/2016/11/gentrification-blog.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 13
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 39,
+  "fields": {
+    "brief": "Habitat - Urban - city",
+    "image": "https://www.thebalancecareers.com/thmb/8I95j082uZT-X8RpmzL65EKtjFA=/950x0/high-angle-view-of-lower-east-side-manhattan-downtown--new-york-city--usa-640006562-5ae52a273de423003776ae2e.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 13
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 40,
+  "fields": {
+    "brief": "Habitat - River - river",
+    "image": "http://africageographic.com/wp-content/uploads/2014/09/Molema-limpopo-river-landscape.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 14
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 41,
+  "fields": {
+    "brief": "Habitat - River - rocky",
+    "image": "https://www.freewalldownload.com/forest-wallpapers/forest-rivers-images-desktop-widescreen-free-download.jpeg",
+    "threat": null,
+    "animal": null,
+    "habitat": 14
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 42,
+  "fields": {
+    "brief": "Habitat - River - forest river",
+    "image": "https://live.staticflickr.com/3226/3139136468_b0ba229dd8_b.jpg",
+    "threat": null,
+    "animal": null,
+    "habitat": 14
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 43,
+  "fields": {
+    "brief": "Siberian tiger - sitting in the snow",
+    "image": "https://ichef.bbci.co.uk/images/ic/976xn/p05qzvqn.jpg",
+    "threat": null,
+    "animal": 4,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 44,
+  "fields": {
+    "brief": "African Lion - male lion sitting",
+    "image": "https://cdn.wallpapersafari.com/29/80/f0nseY.jpg",
+    "threat": null,
+    "animal": 13,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 45,
+  "fields": {
+    "brief": "Cheetah - standing looking out at the plains",
+    "image": "https://cdn.britannica.com/98/152298-050-8E45510A/Cheetah.jpg",
+    "threat": null,
+    "animal": 14,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 46,
+  "fields": {
+    "brief": "Leopard - leopard walking",
+    "image": "https://live.staticflickr.com/4272/34767542726_f75ebc66b1_b.jpg",
+    "threat": null,
+    "animal": 16,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 47,
+  "fields": {
+    "brief": "Plains Zebra - standing in the plains",
+    "image": "https://animals.sandiegozoo.org/sites/default/files/2016-08/hero_zebra_animals.jpg",
+    "threat": null,
+    "animal": 17,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 48,
+  "fields": {
+    "brief": "Blue Wildebeest - standing in the plains",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Blue_Wildebeest%2C_Ngorongoro.jpg/1200px-Blue_Wildebeest%2C_Ngorongoro.jpg",
+    "threat": null,
+    "animal": 18,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 49,
+  "fields": {
+    "brief": "African Buffalo - standing in the plains",
+    "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i3Yp1mXpDIMA/v2/1000x-1.jpg",
+    "threat": null,
+    "animal": 19,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 50,
+  "fields": {
+    "brief": "Black Mamba - closeup of black mamba",
+    "image": "https://s28164.pcdn.co/files/Black-Mamba-0016-8935-1280x720.jpg",
+    "threat": null,
+    "animal": 26,
+    "habitat": null
   }
 }
 ]

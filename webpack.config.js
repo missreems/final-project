@@ -54,7 +54,7 @@ module.exports = {
       inject: 'body'
     }),
     new CopyWebpackPlugin([
-      { from: './frontend/src/assets', to: 'assets' }
+      { from: './src/assets', to: 'assets' }
     ])
   ]
 }

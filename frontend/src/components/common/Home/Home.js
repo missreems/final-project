@@ -7,20 +7,43 @@ class Home extends React.Component {
     super()
 
     this.state = {
+      animals: null,
       classifications: null
     }
+
+    this.handleChange = this.handleChange.bind(this)
   }
 
   componentDidMount() {
+    axios.get('/api/animals')
+      .then(res => this.setState({ animals: res.data }))
+      .catch(err => console.log(err))
+
     axios.get('/api/classifications')
       .then(res => this.setState({ classifications: res.data }))
       .catch(err => console.log(err))
   }
+  
+  searchAnimals() {
+    const { animals, search } = this.state
+    const re = new RegExp(search, 'i')
+    return animals.filter(animal => {
+      return re.test(animal.name)
+    })
+  }
+
+  handleChange(e) {
+    this.searchAnimals()
+    this.setState({ [e.target.name]: e.target.value })
+  }
+  
+  
 
   render() {
+    const { animals, classifications } = this.state
+    if (!animals || !classifications) return null
     console.log(this.state)
-    const { classifications } = this.state
-    if (!classifications) return null
+
     return (
       <div className="home">
         <div className="collections-banner">
@@ -36,7 +59,12 @@ class Home extends React.Component {
         <a id="chevron">
           <div className="search-banner">
             <div className="search-container">
-              <input type="text" placeholder="Type animal name here..."></input>
+              <input
+                type="text"
+                name="search"
+                placeholder="Type animal name here..."
+                onChange={this.handleChange}>
+              </input>
               <button type="submit">Search Animals</button>
             </div>
           </div>
@@ -48,10 +76,9 @@ class Home extends React.Component {
           </div>
           <div  className="classification-card-container">
             {classifications.map(classification =>
-              <Link to="#" key={classification.id}>
+              <Link to='#' key={classification.id}>
 
                 <div className="classification-card">
-                  {/* <img src={classification.images[0].image}></img> */}
                   <h5 className="centered">{classification.classification}</h5>
                 </div>
               </Link>
@@ -66,4 +93,12 @@ class Home extends React.Component {
 
 export default Home
 
-// Link -- to={`/classifications/${classification.id}`}
+// && (country.region === region || region === 'All')
+
+{/* <Link to={`/classifications/${classification.id}`} key={classification.id}>
+
+<div className="classification-card">
+  <img src={classification.images[0].image}></img>
+  <h5 className="centered">{classification.classification}</h5>
+</div>
+</Link> */}

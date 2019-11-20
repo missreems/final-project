@@ -37,7 +37,7 @@ class HabitatIndex extends React.Component {
               <Link to={`/habitats/${habitat.id}`} key={habitat.id}>
 
                 <div className="habitat-index-card">
-                  <img src={habitat.images[0].image}></img>
+                  <img src={habitat.images[0].image} alt={habitat.images[0].brief}></img>
                   <h5 className="centered">{habitat.name}</h5>
                 </div>
               </Link>
