@@ -735,24 +735,6 @@
   }
 },
 {
-  "model": "animals.animal",
-  "pk": 29,
-  "fields": {
-    "name": "Wallaby",
-    "scientific_name": "Notamacropus",
-    "average_lifespan": 9,
-    "size": 12.0,
-    "size_unit": "inches",
-    "weight": 4.0,
-    "weight_unit": "pounds",
-    "fact": "The pademelon is the smallest wallaby species.",
-    "diet": "HE",
-    "classification": 1,
-    "habitats": 9,
-    "threats": []
-  }
-},
-{
   "model": "animals.description",
   "pk": 1,
   "fields": {
@@ -857,7 +839,7 @@
   "pk": 9,
   "fields": {
     "brief": "Habitat - Polar Regions - floating ice",
-    "image": "http://www.earthtimes.org/newsimage/arctic-sea-ice-loss-lets-pacific-sea-life-atlantic_266.jpg",
+    "image": "https://i.imgur.com/Ju4f7zd.jpg",
     "threat": null,
     "animal": null,
     "habitat": 2
@@ -868,7 +850,7 @@
   "pk": 10,
   "fields": {
     "brief": "Habitat - Rainforest - misty rainforest",
-    "image": "https://www.nature.uni-freiburg.de/bilder/forschung/Regenwald",
+    "image": "https://i.imgur.com/AamoDNU.jpg",
     "threat": null,
     "animal": null,
     "habitat": 3
@@ -879,7 +861,7 @@
   "pk": 11,
   "fields": {
     "brief": "Habitat - Rainforest - rainforest river",
-    "image": "https://physicsworld.com/wp-content/uploads/2019/06/Amazon-rainforest-482799971-iStock_edsongrandisoli.jpg",
+    "image": "https://i.imgur.com/Gisq0za.jpg",
     "threat": null,
     "animal": null,
     "habitat": 3
@@ -890,7 +872,7 @@
   "pk": 12,
   "fields": {
     "brief": "Habitat - Rainforest - rainforest stream",
-    "image": "https://www.fredericdemeuse.com/wp-content/uploads/2017/09/28-nature-photography-forest-photography-temperate-rainforest-olympic-peninsula.jpg",
+    "image": "https://i.imgur.com/pvbcHEU.jpg",
     "threat": null,
     "animal": null,
     "habitat": 3
@@ -901,7 +883,7 @@
   "pk": 13,
   "fields": {
     "brief": "Habitat - Woodlands - autumn woodland",
-    "image": "http://focusforestry.co.uk/wp-content/uploads/forestry-woodland-management.jpg",
+    "image": "https://i.imgur.com/VjTpoXc.jpg",
     "threat": null,
     "animal": null,
     "habitat": 4
@@ -912,7 +894,7 @@
   "pk": 14,
   "fields": {
     "brief": "Habitat - Woodlands - green woodland",
-    "image": "https://www.ecolandscaping.org/wp-content/uploads/2018/04/Ferns-in-Woodland.jpg",
+    "image": "https://i.imgur.com/8IEDoy9.jpg",
     "threat": null,
     "animal": null,
     "habitat": 4
@@ -923,7 +905,7 @@
   "pk": 15,
   "fields": {
     "brief": "Habitat - Woodlands - greenery",
-    "image": "https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/50/2019/10/GettyImages-549213657_352938032_617492392-920x614.jpg",
+    "image": "https://i.imgur.com/rAQ6ywT.jpg",
     "threat": null,
     "animal": null,
     "habitat": 4
@@ -934,7 +916,7 @@
   "pk": 16,
   "fields": {
     "brief": "Habitat - Coniferous - autumn",
-    "image": "https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/sn-forest_0.jpg?itok=iR_ZikIp",
+    "image": "https://i.imgur.com/eP1Rh51.jpg",
     "threat": null,
     "animal": null,
     "habitat": 5
@@ -945,7 +927,7 @@
   "pk": 17,
   "fields": {
     "brief": "Habitat - Coniferous - water",
-    "image": "https://cdn.thinglink.me/api/image/724006096527687680/1240/10/scaletowidth",
+    "image": "https://i.imgur.com/zZPp6pl.jpg",
     "threat": null,
     "animal": null,
     "habitat": 5
@@ -956,7 +938,7 @@
   "pk": 18,
   "fields": {
     "brief": "Habitat - Coniferous - forest",
-    "image": "http://www.coniferousforest.com/wp-content/uploads/2015/02/Coniferous-Forest.jpg",
+    "image": "https://i.imgur.com/bi7Zzji.jpg",
     "threat": null,
     "animal": null,
     "habitat": 5
@@ -967,7 +949,7 @@
   "pk": 19,
   "fields": {
     "brief": "Habitat - Temperate - grass",
-    "image": "https://assets.labroots.com/_public/_files/system/ck/trending/buffalo-gap-national-grasslands-56d40df05f9b5879cc8e69ac_02d8d4f7932eeb5cc982551fa08028b8.jpg",
+    "image": "https://i.imgur.com/8niTraa.jpg",
     "threat": null,
     "animal": null,
     "habitat": 7
@@ -978,7 +960,7 @@
   "pk": 20,
   "fields": {
     "brief": "Habitat - Temperate - greenery",
-    "image": "http://assets.worldwildlife.org/photos/4287/images/story_full_width/NGP_Hargreaves.jpg?1370354523",
+    "image": "https://i.imgur.com/vxVAYZM.jpg",
     "threat": null,
     "animal": null,
     "habitat": 7
@@ -989,7 +971,7 @@
   "pk": 21,
   "fields": {
     "brief": "Habitat - Temperate - trees",
-    "image": "https://i.pinimg.com/originals/8e/a1/c2/8ea1c2bdf25c6b0fd9701fada740ff26.jpg",
+    "image": "https://i.imgur.com/pO5aOIm.jpg",
     "threat": null,
     "animal": null,
     "habitat": 7
@@ -1000,7 +982,7 @@
   "pk": 22,
   "fields": {
     "brief": "Habitat - Desert - tree",
-    "image": "https://cdn.pixabay.com/photo/2017/09/18/17/09/namib-desert-2762496_1280.jpg",
+    "image": "https://i.imgur.com/mXBFrAU.jpg",
     "threat": null,
     "animal": null,
     "habitat": 8
@@ -1011,7 +993,7 @@
   "pk": 23,
   "fields": {
     "brief": "Habitat - Desert - desert",
-    "image": "https://www.thoughtco.com/thmb/2-kTlvx0gTPzrS4xkei3GamkpTg=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/wave-pattern-desert-landscape--oman-886145780-5c45542046e0fb00012ebabf.jpg",
+    "image": "https://i.imgur.com/4RJxHA8.jpg",
     "threat": null,
     "animal": null,
     "habitat": 8
@@ -1022,7 +1004,7 @@
   "pk": 24,
   "fields": {
     "brief": "Habitat - Desert - dry desert",
-    "image": "https://www.planetware.com/photos-large/USCA/california-death-valley-race-track.jpg",
+    "image": "https://i.imgur.com/MOoKlU6.jpg",
     "threat": null,
     "animal": null,
     "habitat": 8
@@ -1033,7 +1015,7 @@
   "pk": 25,
   "fields": {
     "brief": "Habitat - Scrubland - trees",
-    "image": "https://www.abc.net.au/news/image/5299558-3x2-940x627.jpg",
+    "image": "https://i.imgur.com/BL4PDFM.jpg",
     "threat": null,
     "animal": null,
     "habitat": 9
@@ -1044,7 +1026,7 @@
   "pk": 26,
   "fields": {
     "brief": "Habitat - Scrubland - bushes",
-    "image": "https://media.sciencephoto.com/image/c0230089/800wm",
+    "image": "https://i.imgur.com/mmz16IP.jpg",
     "threat": null,
     "animal": null,
     "habitat": 9
@@ -1055,7 +1037,7 @@
   "pk": 27,
   "fields": {
     "brief": "Habitat - Scrubland - high view",
-    "image": "https://images.macalba.net/2011/08/20110527-outback2011--winton--outback-scrub.jpg",
+    "image": "https://i.imgur.com/h5byCbD.jpg",
     "threat": null,
     "animal": null,
     "habitat": 9
@@ -1066,7 +1048,7 @@
   "pk": 28,
   "fields": {
     "brief": "Habitat - Open Ocean - above sealevel",
-    "image": "https://oceana.org/sites/default/files/styles/lightbox_full/public/open-ocean_hero.jpg?itok=O5NKj3Kn",
+    "image": "https://i.imgur.com/35SrSim.jpg",
     "threat": null,
     "animal": null,
     "habitat": 10
@@ -1077,7 +1059,7 @@
   "pk": 29,
   "fields": {
     "brief": "Habitat - Open Ocean - underwater",
-    "image": "https://jooinn.com/images/water-under-1.png",
+    "image": "https://i.imgur.com/pSBfhl5.png",
     "threat": null,
     "animal": null,
     "habitat": 10
@@ -1088,7 +1070,7 @@
   "pk": 30,
   "fields": {
     "brief": "Habitat - Open Ocean - crashing waves",
-    "image": "https://www.theunknownblue.com/wp-content/uploads/2019/01/sandro-kradolfer-1077243-unsplash-1544903657041.jpg",
+    "image": "https://i.imgur.com/B9sRyhS.jpg",
     "threat": null,
     "animal": null,
     "habitat": 10
@@ -1099,7 +1081,7 @@
   "pk": 31,
   "fields": {
     "brief": "Habitat - Deep Ocean - empty ocean",
-    "image": "https://thumbs-prod.si-cdn.com/2usRdNQ3zQ_p0I6NJj1QjVEnRTA=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/2e/40/2e40ed82-5cda-4068-8457-257d3f100b9d/42-25763390.jpg",
+    "image": "https://i.imgur.com/QeTHBG9.jpg",
     "threat": null,
     "animal": null,
     "habitat": 11
@@ -1110,7 +1092,7 @@
   "pk": 32,
   "fields": {
     "brief": "Habitat - Deep Ocean - rocky",
-    "image": "https://www.sbs.com.au/topics/sites/sbs.com.au.topics/files/styles/full/public/deep_ocean.jpg?itok=ipl0FUgz&mtime=1471387538",
+    "image": "https://i.imgur.com/zptMUs6.jpg",
     "threat": null,
     "animal": null,
     "habitat": 11
@@ -1121,7 +1103,7 @@
   "pk": 33,
   "fields": {
     "brief": "Habitat - Deep Ocean - sunray",
-    "image": "https://eastonialeopards.com/wp-content/uploads/2018/03/casey-900x589.jpg",
+    "image": "https://i.imgur.com/cZgq6RO.jpg",
     "threat": null,
     "animal": null,
     "habitat": 11
@@ -1132,7 +1114,7 @@
   "pk": 34,
   "fields": {
     "brief": "Habitat - Coral Reef - colourful reef",
-    "image": "https://www.pobonline.com/ext/resources/images/GDP/GDP-features/coral-reef.jpg?1486749391",
+    "image": "https://i.imgur.com/D5iwn0Y.jpg",
     "threat": null,
     "animal": null,
     "habitat": 12
@@ -1143,7 +1125,7 @@
   "pk": 35,
   "fields": {
     "brief": "Habitat - Coral Reef - above sealevel",
-    "image": "https://coral.org/wp-content/uploads/2013/10/CoralReef_FrenchPolynesia-1024x681.jpg",
+    "image": "https://i.imgur.com/5Y2f8HD.jpg",
     "threat": null,
     "animal": null,
     "habitat": 12
@@ -1154,7 +1136,7 @@
   "pk": 36,
   "fields": {
     "brief": "Habitat - Coral Reef - reef",
-    "image": "https://www.hawaiipublicradio.org/sites/khpr/files/styles/x_large/public/201907/coral_reef.jpg",
+    "image": "https://i.imgur.com/CNtPAx9.jpg",
     "threat": null,
     "animal": null,
     "habitat": 12
@@ -1165,7 +1147,7 @@
   "pk": 37,
   "fields": {
     "brief": "Habitat - Urban - city park",
-    "image": "https://www.worldfinance.com/wp-content/uploads/2019/05/Infrastructure.jpg",
+    "image": "https://i.imgur.com/a0ciV3z.jpg",
     "threat": null,
     "animal": null,
     "habitat": 13
@@ -1176,7 +1158,7 @@
   "pk": 38,
   "fields": {
     "brief": "Habitat - Urban - rural",
-    "image": "https://www.naturalspafactory.com/old-blog/wp-content/uploads/2016/11/gentrification-blog.jpg",
+    "image": "https://i.imgur.com/jAu5hPN.jpg",
     "threat": null,
     "animal": null,
     "habitat": 13
@@ -1187,7 +1169,7 @@
   "pk": 39,
   "fields": {
     "brief": "Habitat - Urban - city",
-    "image": "https://www.thebalancecareers.com/thmb/8I95j082uZT-X8RpmzL65EKtjFA=/950x0/high-angle-view-of-lower-east-side-manhattan-downtown--new-york-city--usa-640006562-5ae52a273de423003776ae2e.jpg",
+    "image": "https://i.imgur.com/djA3SUN.jpg",
     "threat": null,
     "animal": null,
     "habitat": 13
@@ -1198,7 +1180,7 @@
   "pk": 40,
   "fields": {
     "brief": "Habitat - River - river",
-    "image": "http://africageographic.com/wp-content/uploads/2014/09/Molema-limpopo-river-landscape.jpg",
+    "image": "https://i.imgur.com/1PoAb62.jpg",
     "threat": null,
     "animal": null,
     "habitat": 14
@@ -1209,7 +1191,7 @@
   "pk": 41,
   "fields": {
     "brief": "Habitat - River - rocky",
-    "image": "https://www.freewalldownload.com/forest-wallpapers/forest-rivers-images-desktop-widescreen-free-download.jpeg",
+    "image": "https://i.imgur.com/yAeN6FQ.jpg",
     "threat": null,
     "animal": null,
     "habitat": 14
@@ -1220,7 +1202,7 @@
   "pk": 42,
   "fields": {
     "brief": "Habitat - River - forest river",
-    "image": "https://live.staticflickr.com/3226/3139136468_b0ba229dd8_b.jpg",
+    "image": "https://i.imgur.com/BL3SV1B.jpg",
     "threat": null,
     "animal": null,
     "habitat": 14
@@ -1231,7 +1213,7 @@
   "pk": 43,
   "fields": {
     "brief": "Siberian tiger - sitting in the snow",
-    "image": "https://ichef.bbci.co.uk/images/ic/976xn/p05qzvqn.jpg",
+    "image": "https://i.imgur.com/Uhj9RfK.jpg",
     "threat": null,
     "animal": 4,
     "habitat": null
@@ -1242,7 +1224,7 @@
   "pk": 44,
   "fields": {
     "brief": "African Lion - male lion sitting",
-    "image": "https://cdn.wallpapersafari.com/29/80/f0nseY.jpg",
+    "image": "https://i.imgur.com/Nuxqk7h.jpg",
     "threat": null,
     "animal": 13,
     "habitat": null
@@ -1253,7 +1235,7 @@
   "pk": 45,
   "fields": {
     "brief": "Cheetah - standing looking out at the plains",
-    "image": "https://cdn.britannica.com/98/152298-050-8E45510A/Cheetah.jpg",
+    "image": "https://i.imgur.com/bem0tfR.jpg",
     "threat": null,
     "animal": 14,
     "habitat": null
@@ -1264,7 +1246,7 @@
   "pk": 46,
   "fields": {
     "brief": "Leopard - leopard walking",
-    "image": "https://live.staticflickr.com/4272/34767542726_f75ebc66b1_b.jpg",
+    "image": "https://i.imgur.com/8UteOrC.jpg",
     "threat": null,
     "animal": 16,
     "habitat": null
@@ -1275,7 +1257,7 @@
   "pk": 47,
   "fields": {
     "brief": "Plains Zebra - standing in the plains",
-    "image": "https://animals.sandiegozoo.org/sites/default/files/2016-08/hero_zebra_animals.jpg",
+    "image": "https://i.imgur.com/KSJozwg.jpg",
     "threat": null,
     "animal": 17,
     "habitat": null
@@ -1286,7 +1268,7 @@
   "pk": 48,
   "fields": {
     "brief": "Blue Wildebeest - standing in the plains",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Blue_Wildebeest%2C_Ngorongoro.jpg/1200px-Blue_Wildebeest%2C_Ngorongoro.jpg",
+    "image": "https://i.imgur.com/r9GP79Z.jpg",
     "threat": null,
     "animal": 18,
     "habitat": null
@@ -1297,7 +1279,7 @@
   "pk": 49,
   "fields": {
     "brief": "African Buffalo - standing in the plains",
-    "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i3Yp1mXpDIMA/v2/1000x-1.jpg",
+    "image": "https://i.imgur.com/9h4XGVt.jpg",
     "threat": null,
     "animal": 19,
     "habitat": null
@@ -1308,9 +1290,240 @@
   "pk": 50,
   "fields": {
     "brief": "Black Mamba - closeup of black mamba",
-    "image": "https://s28164.pcdn.co/files/Black-Mamba-0016-8935-1280x720.jpg",
+    "image": "https://i.imgur.com/KSz0UZw.jpg",
     "threat": null,
     "animal": 26,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 51,
+  "fields": {
+    "brief": "Great White Shark - full body view",
+    "image": "https://i.imgur.com/c2f9tQD.jpg",
+    "threat": null,
+    "animal": 1,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 52,
+  "fields": {
+    "brief": "Tiger Shark - full body view",
+    "image": "https://i.imgur.com/pOHVY8W.jpg",
+    "threat": null,
+    "animal": 2,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 53,
+  "fields": {
+    "brief": "Sand Tiger Shark - full body view",
+    "image": "https://i.imgur.com/EGGUqb4.jpg",
+    "threat": null,
+    "animal": 3,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 54,
+  "fields": {
+    "brief": "Bengal Tiger - roaring tiger",
+    "image": "https://i.imgur.com/t8b1W7w.jpg",
+    "threat": null,
+    "animal": 5,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 55,
+  "fields": {
+    "brief": "Bull Shark - close up",
+    "image": "https://i.imgur.com/2vYQYn1.jpg",
+    "threat": null,
+    "animal": 6,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 56,
+  "fields": {
+    "brief": "Nurse Shark - sitting at the bottom of the seafloor",
+    "image": "https://i.imgur.com/hxzDnSM.jpg",
+    "threat": null,
+    "animal": 7,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 57,
+  "fields": {
+    "brief": "Walrus - sitting on ice",
+    "image": "https://i.imgur.com/VIVSnBc.jpg",
+    "threat": null,
+    "animal": 8,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 58,
+  "fields": {
+    "brief": "Leopard Seal - sitting on ice",
+    "image": "https://i.imgur.com/AhRz1Mi.png",
+    "threat": null,
+    "animal": 9,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 59,
+  "fields": {
+    "brief": "Emperor Penguin - standing alone",
+    "image": "https://i.imgur.com/FrPphEr.jpg",
+    "threat": null,
+    "animal": 10,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 60,
+  "fields": {
+    "brief": "Polar Bear - walking",
+    "image": "https://i.imgur.com/tNovOgE.jpg",
+    "threat": null,
+    "animal": 11,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 61,
+  "fields": {
+    "brief": "Artic Fox - stalking prey",
+    "image": "https://i.imgur.com/PkLmxGE.jpg",
+    "threat": null,
+    "animal": 12,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 62,
+  "fields": {
+    "brief": "Jaguar - lying down",
+    "image": "https://i.imgur.com/niahIpe.jpg",
+    "threat": null,
+    "animal": 15,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 63,
+  "fields": {
+    "brief": "Hippo - walking in shallow water",
+    "image": "https://i.imgur.com/ChdS92a.jpg",
+    "threat": null,
+    "animal": 20,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 64,
+  "fields": {
+    "brief": "Seahorse - yellow seahorse in coral reef",
+    "image": "https://i.imgur.com/P0Isizs.jpg",
+    "threat": null,
+    "animal": 21,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 65,
+  "fields": {
+    "brief": "Nile Crocodile - lying down",
+    "image": "https://i.imgur.com/57BtmVJ.jpg",
+    "threat": null,
+    "animal": 22,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 66,
+  "fields": {
+    "brief": "American Alligator",
+    "image": "https://i.imgur.com/4QGKpLf.jpg",
+    "threat": null,
+    "animal": 23,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 67,
+  "fields": {
+    "brief": "King Cobra - cobra showing its hood",
+    "image": "https://i.imgur.com/ui3kRCt.jpg",
+    "threat": null,
+    "animal": 24,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 68,
+  "fields": {
+    "brief": "Burmese Python - closeup",
+    "image": "https://i.imgur.com/ouV77K1.jpg",
+    "threat": null,
+    "animal": 25,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 69,
+  "fields": {
+    "brief": "Eastern Diamondback Rattlesnake - tongue flickering",
+    "image": "https://i.imgur.com/zIHnOkZ.jpg",
+    "threat": null,
+    "animal": 27,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 70,
+  "fields": {
+    "brief": "Red Kangaroo - watching the plains",
+    "image": "https://i.imgur.com/06UZdzh.jpg",
+    "threat": null,
+    "animal": 28,
+    "habitat": null
+  }
+},
+{
+  "model": "animals.image",
+  "pk": 71,
+  "fields": {
+    "brief": "Red Kangaroo - watching the plains",
+    "image": "https://i.imgur.com/06UZdzh.jpg",
+    "threat": null,
+    "animal": 28,
     "habitat": null
   }
 }
