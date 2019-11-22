@@ -6,26 +6,23 @@
 ## Intro
 Animalia is my final project created whilst studying at General Assembly in the Software Engineering Immersive. This is a full-stack application using React for the front-end, Python Django for the back-end and serving my data via a Postgres database.
 
-
+#
 ## Motivation
 Since starting my first project, I have gained lots of knowledge and worked on lots of small projects gathering coding experience. For this application, I decided to create an animal encyclopedia with a focus on animal conservation. I chose this subject for my project as I have a deep interest for animals.
 
 Many of my ideas were inspired from my project research like the [National Geographic Wild](https://www.nationalgeographic.com/animals/facts-pictures/) website, as well as the [WWF](https://www.worldwildlife.org/species) website.
 
-
+#
 ## Table of Contents
-- [Deployment](##deployment)
 - [Tech Used](##tech-used)
+- [Deployment](##deployment)
 - [Getting Started](##getting-started)
 - [Game Architecture](##game-architecture)
 - [Challenges & Future Improvements](##challenges-&-future-improvements)
 - [Creator](##creator)
 
 
-## Deployment
-This web app is deployed on Heroku and it can be found here: HEROKU LINK
-
-
+#
 ## Tech used
 * Postgres
 * Python
@@ -35,6 +32,11 @@ This web app is deployed on Heroku and it can be found here: HEROKU LINK
     * Axios
 * SAAS
 * HTML5
+
+
+#
+## Deployment
+This web app is deployed on Heroku and it can be found here: HEROKU LINK
 
 
 ## Getting Started
@@ -48,42 +50,46 @@ $ yarn start
 <!-- Check the console for any issues and if there are check the package.json for any dependancies missing  -->
 ```
 
-
+#
 ## Game Architecture
 
-Jelly Invaders is a game where the user moves the player and attempts to shoot all the moving jellies on the 10x10 grid before it reaches the bottom.
+### Animalia Homepage
+This page highlights the core aspects of this website, like the newest content available or upcoming content like the Collections section. As this application is based on animals, animal classification links are present at the bottom of the home page.
 
-![readme-one](assets/screenshots/starting-page.png)
+### Habitats
+This page obtains the API data for habitats and displays it through two pages:
+* Index page - displays all the habitats
+* Show page - shows each habitat with relevant information, and links to the animals living in the specific habitat
 
-The game currently has one wave of jellies.
+### Animals
+This page obtains the API data for animals and displays it through two pages:
+* Index page - displays all the animals and can be filtered via alphabet buttons, which refer to the initial of the animal name
+* Show page - shows each animal with relevant information, and links to the animals's habitat
 
-![readme-one](assets/screenshots/jellies.png)
+### Database
+A large aspect of this application is the creation of all the data, instead of using an external API. There are many models used in the backend and each model is conencted to the other models in various ways.
+
+#
+## Planning
+### Back-end
+The complexity of my project lies in the many entwined relationships created. I made a mindmap to show the one-to-many and many-to-many relationships between all my models, to simplify the contents of the serializers:
+[MINDMAP]
+
+### Front-end
+Some hand-drawn wireframes were made to highlight the user experience of my application:
+[HAND-DRAWN WIREFRAMES]
+
+#
+## Testing
 
 
-When the game begins, the computer releases the wave of jellies onto the grid. The jellies move across the grid from left to right, when it reaches the end of each line on the grid the jellies will move from left to right on the next line until they reach the red line indicated on the grid.
-
-<!-- screenshot of red line -->
-
-The player's sprite is at the bottom of the grid, it is allowed to move left and right via the arrow keys, one cell at a time. The player can shoot the jellies via the 'V' key and releases a bullet only one at a time. The jellies move slighlty slower than the speed of the bullet.
-
-After every bullet is shot by the player, the game checks for a 'win' by verifying if any jellies are left. If the result 'false' is returned from the length of the array of jellies, the player wins.
-
-The game can be won by shooting all the jellies on the grid, else the screen will show the sign 'Game Over' if any jelly reaches the red line.
-
-![readme-one](assets/screenshots/winning-page.png) ![readme-one](assets/screenshots/losing-page.png)
-
-An example of the function...used for ... :
-<!-- screenshot of code for the function chosen to show -->
-
-
+#
 ## Challenges & Future Improvements
-The main challenge of this project was creating the game logic for each feature. Each feature introduced in the game allowed me to understand a little bit more about how to piece together code to produce a fully-working feature in the game. Also, connecting features together so they all worked well together was quite challenging.
+This was my first time working with Django and it was quite a learning curve for me as a lot of the functionality is covered by Django. As I started to understand the relationships between the models, the serializers, the views and the urls, Django became more and more simpler to use as I created my application. Also, this is my first project in which I have used Python as a key programming language and I really enjoyed the challenge of coding in a new language after using JavaScript in my previous projects and throughout my studying at General Assembly. 
 
-<!-- EXAMPLE - This strategy was effective as it allowed to easily debug which columns were being played on correctly or not. However, the code is quite long and it makes Squidward's move reliant on Spongebob's last one rather then looking at the whole game so far.-->
-
-In the future, I hope to refactor my key functions so the game works smoothly. I'd like to give the jellies the functionality of shooting at the player and adding an additional condition for losing the game.
+In the future, I hope to add a working search-bar on the homepage and on the navigation bar. Also, I'd like to add the additional models in my back-end like collections and the Red List scale for endangered animals, as well as creating web pages for these models.
 
 
+#
 ## Creator
 Reema Patel
-<!--  - Link to first project here: website link  -->
