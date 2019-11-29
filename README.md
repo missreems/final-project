@@ -8,7 +8,7 @@ Animalia is my final project created whilst studying at General Assembly in the 
 
 #
 ## Motivation
-Since starting my first project, I have gained lots of knowledge and worked on lots of small projects gathering coding experience. For this application, I decided to create an animal encyclopedia with a focus on animal conservation. I chose this subject for my project as I have a deep interest for animals.
+For this application, I decided to create an animal cyclopedia with a focus on animal conservation. I chose this subject for my project as I have a deep interest for animals.
 
 Many of my ideas were inspired from my project research like the [National Geographic Wild](https://www.nationalgeographic.com/animals/facts-pictures/) website, as well as the [WWF](https://www.worldwildlife.org/species) website.
 
@@ -87,7 +87,7 @@ Some hand-drawn wireframes were made to highlight the user experience of my appl
 ## Challenges & Future Improvements
 This was my first time working with Django and it was quite a learning curve for me as a lot of the functionality is covered by Django. As I started to understand the relationships between the models, the serializers, the views and the urls, Django became more and more simpler to use as I created my application. Also, this is my first project in which I have used Python as a key programming language and I really enjoyed the challenge of coding in a new language after using JavaScript in my previous projects and throughout my studying at General Assembly. 
 
-In the future, I hope to add a working search-bar on the homepage and on the navigation bar. Also, I'd like to add the additional models in my back-end like collections and the Red List scale for endangered animals, as well as creating web pages for these models.
+In the future, I hope to add the additional models in my back-end like collections and the Red List scale for endangered animals, as well as creating web pages for these models.
 
 
 #

@@ -28,7 +28,7 @@ class AnimalShow extends React.Component {
     
     const { animal } = this.state
     if (!animal) return null
-    console.log(this.state.animal.diet)
+    console.log(animal)
     return (
       <div className="animal-show">
 
@@ -50,7 +50,7 @@ class AnimalShow extends React.Component {
                   </div>
                   <div>
                     <h5>Classification:</h5>
-                    <p>{animal.classification.classification}</p>
+                    <p>{animal.classification.classification_group}</p>
                   </div>
                   <div>
                     <h5>Diet:</h5>

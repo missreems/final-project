@@ -10,7 +10,7 @@ class NestedThreatSerializer(serializers.ModelSerializer):
 class NestedClassificationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Classification
-        fields = ('id', 'classification')
+        fields = ('id', 'classification_group')
 
 class NestedDescriptionSerializer(serializers.ModelSerializer):
     class Meta:
@@ -58,7 +58,7 @@ class ClassificationSerializer(serializers.ModelSerializer):
     animals = NestedAnimalSerializer(many=True)
     class Meta:
         model = Classification
-        fields = ('id', 'classification', 'animals')
+        fields = ('id', 'classification_group', 'animals')
 
 class AnimalSerializer(serializers.ModelSerializer):
     classification = NestedClassificationSerializer()
