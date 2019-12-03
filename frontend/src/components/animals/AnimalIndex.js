@@ -13,12 +13,9 @@ class AnimalIndex extends React.Component {
     }
 
     this.alphabet = []
-  
 
     this.handleClick = this.handleClick.bind(this)
     
-
-   
   }
 
   // create alphabet array

@@ -18,7 +18,9 @@ Many of my ideas were inspired from my project research like the [National Geogr
 - [Deployment](##deployment)
 - [Getting Started](##getting-started)
 - [Game Architecture](##game-architecture)
-- [Challenges & Future Improvements](##challenges-&-future-improvements)
+- [Planning](##planning)
+- [Challenges](##challenges)
+- [Future Features](##future-features)
 - [Creator](##creator)
 
 
@@ -43,12 +45,16 @@ This web app is deployed on Heroku and it can be found here: HEROKU LINK
 Use the clone button to download the source code. In the terminal enter the following commands:
 
 ```
-<!-- To install all the packages listed in the package.json: -->
+<!-- To install all the packages: -->
 $ yarn
-<!-- Run the app in your localhost: -->
-$ yarn start
-<!-- Check the console for any issues and if there are check the package.json for any dependancies missing  -->
+<!-- Create a shell: -->
+$ pipenv shell
+<!-- In your localhost, run the front-end: -->
+$ yarn serve:front
+<!-- In your localhost, run the back-end: -->
+$ yarn serve:back
 ```
+Check the console for any issues and if there are check the package.json for any dependancies missing
 
 #
 ## Game Architecture
@@ -80,13 +86,17 @@ Some hand-drawn wireframes were made to highlight the user experience of my appl
 [HAND-DRAWN WIREFRAMES]
 
 #
-## Testing
+## Challenges
+This was my first time working with Django and it was quite a learning curve for me as a lot of the functionality is covered by Django. As I started to understand the relationships between the models, the serializers, the views and the urls, Django became more and more simpler to use as I created my application. Also, this is my first project in which I have used Python as a key programming language and I really enjoyed the challenge of coding in a new language after using JavaScript in my previous projects and throughout my studying at General Assembly.
 
+One of the key challenges I faced was creating the 'animal' model as it contained many fields, some which were connected via one-to-many and many-to-many relationships.
+IMAGE
+
+An additional challenge I faced was filtering my Animal Index page to show the animals who's name initial matched the letter chosen by the user.
+IMAGE
 
 #
-## Challenges & Future Improvements
-This was my first time working with Django and it was quite a learning curve for me as a lot of the functionality is covered by Django. As I started to understand the relationships between the models, the serializers, the views and the urls, Django became more and more simpler to use as I created my application. Also, this is my first project in which I have used Python as a key programming language and I really enjoyed the challenge of coding in a new language after using JavaScript in my previous projects and throughout my studying at General Assembly. 
-
+## Future Features
 In the future, I hope to add the additional models in my back-end like collections and the Red List scale for endangered animals, as well as creating web pages for these models.
 
 
