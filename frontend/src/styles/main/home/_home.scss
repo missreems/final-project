@@ -16,7 +16,7 @@
   // }
 
   .collections-banner {
-    height: 600px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,9 +47,20 @@
       }
     }
 
-    i {
-      color: white;
+    .chevron-scroll {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 25px;
+      }
+
+      i {
+        color: white;
+      }
     }
+    
   }
   
 }

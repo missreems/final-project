@@ -19,17 +19,10 @@ class HabitatShow extends React.Component {
       .catch(err => console.log(err))
   }
 
-  // filterImages(id) {
-  //   this.state.habitat.images.filter(image => {
-  //     if (image.id === id)
-  //       console.log(image)
-  //   })
-  // }
-
   render() {
-    console.log(this.state)
     const { habitat } = this.state
     if (!habitat) return null
+    console.log(this.state)
     return (
       <div className="habitat-show">
 
