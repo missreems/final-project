@@ -127,11 +127,81 @@ This was my first time working with Django and it was quite a learn
 
 One of the key challenges I faced was creating the 'animal' model as it contained many fields, some which were connected via one-to-many and many-to-many relationships. Keeping my code clean really helped with this, as well as commenting clearly what the model was.
 
-![Animal Model in the Back-End](./screenshots/animal-model.png)
+```
+# ANIMAL MODEL
+class Animal(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+    scientific_name = models.CharField(max_length=100, unique=True)
+    average_lifespan = models.IntegerField()
+    size = models.FloatField()
+    size_unit = models.CharField(max_length=30, default='')
+    weight = models.FloatField()
+    weight_unit = models.CharField(max_length=30, default='')
+    fact = models.CharField(max_length=300, blank=True)
+
+    diet_choices = (
+      ('HE', 'Herbivore'),
+      ('OM', 'Omnivore'),
+      ('CA', 'Carnivore')
+    )
+    diet = models.CharField(max_length=20, choices=diet_choices)
+
+    classification = models.ForeignKey(
+      Classification,
+      related_name='animals',
+      on_delete=models.DO_NOTHING,
+      null=True
+    )
+    habitats = models.ForeignKey(
+      Habitat,
+      related_name='animals',
+      on_delete=models.DO_NOTHING,
+      null=True
+    )
+    threats = models.ManyToManyField(
+      Threat,
+      related_name='animals',
+      blank=True
+    )
+
+    def __str__(self):
+        return f'{self.name}'
+```
 
 An additional challenge I faced was filtering my Animal Index page to show the animals who's name initial matched the letter chosen by the user. Breaking the problem down writing the steps out and by pseudo-coding helped a lot.
 
-![Animal Filtering Function in the Front-End](screenshots/animal-filter-function.png)
+```
+// create alphabet array
+  populateAlphabet() {
+    for ( let i = 65; i < 91; i++) {
+      const letter = String.fromCharCode(i)
+      this.alphabet.push(letter)
+    }
+  }
+
+  componentDidMount() {
+    this.populateAlphabet()
+    axios.get('/api/animals')
+      .then(res => this.setState({ animals: res.data }))
+      .catch(err => console.log(err))
+  }
+
+  handleClick(e){
+    this.setState({ chosenLetter: e.target.value })
+  }
+
+  // filter animals according to the letter clicked
+  filteredAnimals() {
+    const { animals, chosenLetter } = this.state
+    const sortedArray = [...animals]
+    sortedArray.sort((a, b) => (a.name > b.name) ? 1 : -1)
+    console.log(sortedArray)
+    return sortedArray.filter(animal => {
+      if (animal.name.charAt(0) === chosenLetter || chosenLetter === '')
+        return animal
+    })
+  }
+```
 
 #
 ## Future Features
