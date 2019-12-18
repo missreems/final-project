@@ -20,6 +20,10 @@ Many of my ideas were inspired from my project research like the [Na
 - [Deployment](##deployment)
 - [Getting Started](##getting-started)
 - [Architecture](##architecture)
+  - [Animalia Home Page](###animalia-home-page)
+  - [Habitat Pages](###habitat-pages)
+  - [Animal Pages](###animal-pages)
+  - [Database](###database)
 - [Planning](##planning)
 - [Challenges](##challenges)
 - [Future Features](##future-features)
@@ -66,11 +70,11 @@ Check the console for any issues and if there are check the package.
 #
 ## Architecture
 
-### Animalia Homepage
+### Animalia Home Page
 This page highlights the core aspects of this website, like the newest content available or upcoming content like the Collections section. As this application is based on animals, animal classification links are present at the bottom of the home page. This is a feature I would like to continue in the future.
 ![Animalia Home Page](screenshots/home.png)
 
-### Habitats
+### Habitat Pages
 This page obtains the API data for habitats and displays it through two pages:
 * Index page - displays all the habitats
 * Show page - shows each habitat with relevant information, and links to the animals living in the specific habitat
@@ -82,7 +86,7 @@ This page obtains the API data for habitats and displays it through 
 I decided to connect the animals living in that specific habitat, to the Animal Show page like the animals living in the Savanna (as shown above). This is useful for the user if they'd like to know more about the animals that inhabit a habitat.
 
 
-### Animals
+### Animal Pages
 This page obtains the API data for animals and displays it through two pages:
 * Index page - displays all the animals and can be filtered via alphabet buttons, which refer to the initial of the animal name
 * Show page - shows each animal with relevant information, and links to the animals's habitat
@@ -95,6 +99,7 @@ I decided to connect the animal's habitat to the Animal Show page, l
 
 ### Database
 A large aspect of this application is the creation of all the data, instead of using an external API. Within the timespan, I was only able to seed 14 habitats and 25+ animals. There are many models used in the backend, however the relationships between my models are quite complex as they all interconnect with each other in some way.
+
 
 #
 ## Planning
